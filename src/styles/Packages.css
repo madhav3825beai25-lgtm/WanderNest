@@ -1,0 +1,132 @@
+.packages-page {
+  min-height: 100vh;
+  padding: 40px 5%;
+  background: #f5f7fb;
+}
+
+.packages-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.packages-header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.packages-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.package-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  height: auto;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.package-content {
+  padding: 18px;
+}
+
+.package-content h2 {
+  font-size: 21px;
+  color: #111827;
+  margin: 0 0 8px;
+}
+
+.package-location {
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.package-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.package-info {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+  margin-bottom: 15px;
+}
+
+.package-duration {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.package-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.package-button {
+  display: inline-block;
+  background: #0ea5e9;
+  color: white;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.package-button:hover {
+  background: #0284c7;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .packages-page {
+    padding: 30px 20px;
+  }
+
+  .packages-header h1 {
+    font-size: 30px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card img {
+    height: 220px;
+  }
+}
