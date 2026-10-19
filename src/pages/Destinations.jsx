@@ -1,180 +1,232 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Destinations.css";
 
 function Destinations() {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const destinations = [
     {
       id: 1,
-      name: "Paris",
-      country: "France",
-      image:
-        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+      name: "Goa",
+      country: "India",
       description:
-        "Experience the Eiffel Tower, museums, romantic streets and beautiful French culture.",
+        "Relax on beautiful beaches, enjoy water sports, and experience vibrant nightlife.",
+      image:
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      price: "₹12,999",
     },
     {
       id: 2,
-      name: "Bali",
-      country: "Indonesia",
-      image:
-        "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      name: "Manali",
+      country: "India",
       description:
-        "Relax on beautiful beaches, explore ancient temples and enjoy the tropical beauty of Bali.",
+        "Explore snow-covered mountains, valleys, adventure activities, and scenic landscapes.",
+      image:
+        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      price: "₹14,999",
     },
     {
       id: 3,
-      name: "Dubai",
-      country: "United Arab Emirates",
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      name: "Jaipur",
+      country: "India",
       description:
-        "Discover luxury shopping, modern architecture, desert adventures and iconic attractions.",
+        "Discover royal palaces, historic forts, colorful markets, and traditional Rajasthani culture.",
+      image:
+        "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      price: "₹9,999",
     },
     {
       id: 4,
-      name: "Switzerland",
-      country: "Switzerland",
-      image:
-        "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=80",
+      name: "Kerala",
+      country: "India",
       description:
-        "Explore breathtaking Alps, peaceful lakes, scenic trains and charming mountain towns.",
+        "Experience peaceful backwaters, lush greenery, beautiful beaches, and traditional cuisine.",
+      image:
+        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      price: "₹16,999",
     },
     {
       id: 5,
-      name: "Maldives",
-      country: "Maldives",
-      image:
-        "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80",
+      name: "Bali",
+      country: "Indonesia",
       description:
-        "Enjoy crystal-clear water, white beaches, luxury resorts and unforgettable island experiences.",
+        "Experience tropical beaches, ancient temples, rice terraces, and amazing local culture.",
+      image:
+        "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      price: "₹24,999",
     },
     {
       id: 6,
-      name: "Tokyo",
-      country: "Japan",
-      image:
-        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80",
+      name: "Dubai",
+      country: "UAE",
       description:
-        "Experience futuristic Tokyo, traditional temples, Japanese food and Mount Fuji.",
+        "Enjoy luxury shopping, modern architecture, desert adventures, and unforgettable experiences.",
+      image:
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      price: "₹34,999",
     },
     {
       id: 7,
-      name: "London",
-      country: "United Kingdom",
-      image:
-        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+      name: "Switzerland",
+      country: "Europe",
       description:
-        "Visit iconic landmarks, museums and historic streets in one of the world's greatest cities.",
+        "Discover breathtaking mountains, crystal-clear lakes, scenic villages, and beautiful landscapes.",
+      image:
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+      price: "₹59,999",
     },
     {
       id: 8,
-      name: "New York",
-      country: "USA",
-      image:
-        "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?auto=format&fit=crop&w=1200&q=80",
+      name: "Paris",
+      country: "France",
       description:
-        "Experience Times Square, Central Park and the energy of New York City.",
+        "Explore iconic landmarks, charming streets, world-famous museums, and French cuisine.",
+      image:
+        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+      price: "₹49,999",
     },
     {
       id: 9,
-      name: "Santorini",
-      country: "Greece",
-      image:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80",
+      name: "Maldives",
+      country: "Maldives",
       description:
-        "Enjoy whitewashed villages, blue domes, stunning sunsets and beautiful Aegean views.",
+        "Relax in luxury resorts surrounded by turquoise waters, white beaches, and coral reefs.",
+      image:
+        "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80",
+      price: "₹39,999",
     },
     {
       id: 10,
-      name: "Singapore",
-      country: "Singapore",
-      image:
-        "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      name: "Tokyo",
+      country: "Japan",
       description:
-        "Discover futuristic attractions, beautiful gardens, shopping and delicious Asian cuisine.",
-    },
-    {
-      id: 11,
-      name: "Rajasthan",
-      country: "India",
+        "Experience a fascinating blend of modern technology, traditional culture, food, and entertainment.",
       image:
-        "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Explore royal palaces, magnificent forts, colourful markets and the rich heritage of Rajasthan.",
-    },
-    {
-      id: 12,
-      name: "Kashmir",
-      country: "India",
-      image:
-        "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Discover beautiful valleys, snow-covered mountains, peaceful lakes and unforgettable landscapes.",
-    },
-    {
-      id: 13,
-      name: "Goa",
-      country: "India",
-      image:
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Enjoy beautiful beaches, Portuguese architecture, cruises and the relaxed lifestyle of Goa.",
-    },
-    {
-      id: 14,
-      name: "Kerala",
-      country: "India",
-      image:
-        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Explore green hills, peaceful backwaters, tea gardens and traditional houseboat experiences.",
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80",
+      price: "₹69,999",
     },
   ];
+
+  const filteredDestinations = destinations.filter((destination) => {
+    const search = searchTerm.toLowerCase();
+
+    return (
+      destination.name.toLowerCase().includes(search) ||
+      destination.country.toLowerCase().includes(search) ||
+      destination.description.toLowerCase().includes(search)
+    );
+  });
 
   return (
     <section className="destinations-page">
 
+      {/* HEADER */}
       <div className="destinations-header">
         <h1>Explore Destinations</h1>
 
         <p>
-          Discover beautiful destinations and plan your
-          perfect WanderNest adventure.
+          Discover beautiful destinations and plan your next
+          unforgettable journey.
         </p>
       </div>
 
-      <div className="destinations-grid">
+      {/* SEARCH BAR */}
+      <div className="destination-search-container">
+        <div className="destination-search">
+          <span className="search-icon">🔍</span>
 
-        {destinations.map((destination) => (
-          <div
-            className="destination-card"
-            key={destination.id}
-          >
-            <img
-              src={destination.image}
-              alt={destination.name}
-            />
+          <input
+            type="text"
+            placeholder="Search destinations..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
 
-            <div className="destination-content">
-
-              <h2>{destination.name}</h2>
-
-              <h4>{destination.country}</h4>
-
-              <p>{destination.description}</p>
-
-              <Link
-                to={`/destinations/${destination.id}`}
-                className="explore-button"
-              >
-                Explore Now
-              </Link>
-
-            </div>
-          </div>
-        ))}
-
+          {searchTerm && (
+            <button
+              className="clear-search"
+              onClick={() => setSearchTerm("")}
+            >
+              ✕
+            </button>
+          )}
+        </div>
       </div>
+
+      {/* RESULTS COUNT */}
+      <div className="destination-results">
+        {filteredDestinations.length} destination
+        {filteredDestinations.length !== 1 ? "s" : ""} found
+      </div>
+
+      {/* GRID */}
+      {filteredDestinations.length > 0 ? (
+        <div className="destinations-grid">
+
+          {filteredDestinations.map((destination) => (
+            <article
+              className="destination-card"
+              key={destination.id}
+            >
+              <div className="destination-image-container">
+                <img
+                  src={destination.image}
+                  alt={destination.name}
+                  className="destination-image"
+                />
+              </div>
+
+              <div className="destination-content">
+
+                <span className="destination-country">
+                  {destination.country}
+                </span>
+
+                <h2>{destination.name}</h2>
+
+                <p>
+                  {destination.description}
+                </p>
+
+                <div className="destination-bottom">
+
+                  <div className="destination-price">
+                    <span>Starting from</span>
+                    <strong>{destination.price}</strong>
+                  </div>
+
+                  <Link
+                    to={`/destinations/${destination.id}`}
+                    className="destination-button"
+                  >
+                    Explore
+                  </Link>
+
+                </div>
+
+              </div>
+            </article>
+          ))}
+
+        </div>
+      ) : (
+        <div className="no-destinations">
+          <div>🔍</div>
+
+          <h2>No destinations found</h2>
+
+          <p>
+            Try searching for another destination or country.
+          </p>
+
+          <button
+            onClick={() => setSearchTerm("")}
+          >
+            Show All Destinations
+          </button>
+        </div>
+      )}
 
     </section>
   );

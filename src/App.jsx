@@ -91,7 +91,7 @@ function App() {
           element={<Wishlist />}
         />
 
-        {/* 404 PAGE */}
+        {/* 404 */}
         <Route
           path="*"
           element={<NotFound />}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/DestinationCard.css";
 
 function DestinationCard({ destination }) {
@@ -23,7 +24,12 @@ function DestinationCard({ destination }) {
             From {destination.price}
           </span>
 
-          <button>Explore</button>
+          <Link
+            to={`/destinations/${destination.id}`}
+            className="destination-explore-button"
+          >
+            Explore
+          </Link>
         </div>
       </div>
     </article>

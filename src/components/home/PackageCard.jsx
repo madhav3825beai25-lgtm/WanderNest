@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/PackageCard.css";
 
 function PackageCard({ packageItem }) {
@@ -26,11 +27,19 @@ function PackageCard({ packageItem }) {
 
         <div className="package-card-bottom">
           <div>
-            <span className="package-price-label">Starting from</span>
+            <span className="package-price-label">
+              Starting from
+            </span>
+
             <strong>{packageItem.price}</strong>
           </div>
 
-          <button>View Details</button>
+          <Link
+            to={`/packages/${packageItem.id}`}
+            className="package-details-button"
+          >
+            View Details
+          </Link>
         </div>
       </div>
     </article>

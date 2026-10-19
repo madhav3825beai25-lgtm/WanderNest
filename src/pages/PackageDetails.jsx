@@ -7,14 +7,14 @@ function PackageDetails() {
   const packages = [
     {
       id: 1,
-      title: "Royal Rajasthan Escape",
-      location: "Jaipur • Jodhpur • Udaipur",
+      title: "Royal Rajasthan",
+      location: "Jaipur, India",
       duration: "6 Days / 5 Nights",
       price: "₹38,999",
       image:
         "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Experience the royal heritage of Rajasthan through magnificent forts, beautiful palaces, colourful markets and traditional cuisine.",
+        "Discover royal palaces, historic forts, traditional markets, and the rich culture of Rajasthan through an unforgettable journey.",
       hotels: [
         "Royal Heritage Hotel, Jaipur",
         "Desert Palace Hotel, Jodhpur",
@@ -39,44 +39,44 @@ function PackageDetails() {
     {
       id: 2,
       title: "Kashmir Paradise",
-      location: "Srinagar • Gulmarg • Pahalgam",
+      location: "Kashmir, India",
       duration: "6 Days / 5 Nights",
       price: "₹42,999",
       image:
         "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Discover the breathtaking valleys, snow-covered mountains, peaceful lakes and unforgettable beauty of Kashmir.",
+        "Discover breathtaking valleys, snow-covered mountains, peaceful lakes and beautiful landscapes in the beautiful region of Kashmir.",
       hotels: [
-        "Dal Lake View Hotel",
+        "Srinagar Valley Hotel",
         "Gulmarg Mountain Resort",
-        "Pahalgam Valley Resort",
+        "Pahalgam Riverside Hotel",
       ],
       places: [
-        "Dal Lake",
+        "Srinagar",
         "Gulmarg",
         "Pahalgam",
+        "Dal Lake",
         "Mughal Gardens",
-        "Srinagar Old City",
       ],
       includes: [
         "5 Nights accommodation",
         "Daily breakfast",
-        "Shikara ride",
-        "Local sightseeing",
-        "Airport transfers",
+        "Shikara ride on Dal Lake",
+        "Gulmarg sightseeing",
+        "Private transfers",
       ],
     },
 
     {
       id: 3,
       title: "Goa Beach Escape",
-      location: "North Goa • South Goa",
+      location: "Goa, India",
       duration: "4 Days / 3 Nights",
       price: "₹24,999",
       image:
         "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Enjoy beautiful beaches, Portuguese architecture, sunset cruises and the relaxed tropical lifestyle of Goa.",
+        "Enjoy beautiful beaches, crystal-clear water, water sports, local food and exciting nightlife in the tropical paradise of Goa.",
       hotels: [
         "Beachside Resort Goa",
         "Palm Grove Resort",
@@ -99,14 +99,14 @@ function PackageDetails() {
 
     {
       id: 4,
-      title: "Kerala Backwater Retreat",
-      location: "Kochi • Munnar • Alleppey",
+      title: "Kerala Backwaters",
+      location: "Kerala, India",
       duration: "6 Days / 5 Nights",
       price: "₹36,999",
       image:
         "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Explore Kerala's green hills, peaceful backwaters, tea gardens and traditional houseboat experiences.",
+        "Relax among peaceful backwaters, lush greenery, beautiful beaches and stunning landscapes in God's Own Country.",
       hotels: [
         "Munnar Hills Resort",
         "Alleppey Lake Resort",
@@ -130,14 +130,14 @@ function PackageDetails() {
 
     {
       id: 5,
-      title: "Bali Tropical Escape",
-      location: "Bali • Ubud • Kuta • Seminyak",
+      title: "Bali Paradise",
+      location: "Bali, Indonesia",
       duration: "6 Days / 5 Nights",
       price: "₹55,000",
       image:
         "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Relax on tropical beaches, discover ancient temples and experience the peaceful beauty and culture of Bali.",
+        "Experience tropical beaches, ancient temples, rice terraces and unforgettable island life in beautiful Bali.",
       hotels: [
         "Bali Beach Resort",
         "Ubud Valley Resort",
@@ -160,14 +160,14 @@ function PackageDetails() {
 
     {
       id: 6,
-      title: "Dubai Luxury Adventure",
-      location: "Dubai • Abu Dhabi",
+      title: "Dubai Luxury",
+      location: "Dubai, UAE",
       duration: "5 Days / 4 Nights",
       price: "₹62,999",
       image:
         "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Experience Dubai's luxury lifestyle, iconic architecture, desert adventures and the cultural attractions of Abu Dhabi.",
+        "Experience luxury shopping, desert safaris, modern architecture, iconic landmarks and fine dining in Dubai.",
       hotels: [
         "Dubai Marina Hotel",
         "Downtown Luxury Hotel",
@@ -191,13 +191,13 @@ function PackageDetails() {
     {
       id: 7,
       title: "Swiss Alps Experience",
-      location: "Zurich • Lucerne • Interlaken",
+      location: "Switzerland",
       duration: "7 Days / 6 Nights",
       price: "₹1,29,999",
       image:
         "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Travel through Switzerland's breathtaking mountain landscapes, peaceful lakes and charming Alpine towns.",
+        "Discover snow-covered mountains, beautiful lakes, scenic villages and breathtaking Alpine views across Switzerland.",
       hotels: [
         "Zurich Central Hotel",
         "Lucerne Lake Hotel",
@@ -221,14 +221,14 @@ function PackageDetails() {
 
     {
       id: 8,
-      title: "Paris Romantic Getaway",
-      location: "Paris • Versailles",
-      duration: "5 Days / 4 Nights",
+      title: "Paris Explorer",
+      location: "Paris, France",
+      duration: "6 Days / 5 Nights",
       price: "₹89,999",
       image:
         "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Experience romantic Paris with its iconic landmarks, museums, elegant streets, French cuisine and culture.",
+        "Explore iconic landmarks, world-famous museums, charming streets and delicious French cuisine in Paris.",
       hotels: [
         "Hotel Eiffel Paris",
         "Paris Luxury Stay",
@@ -241,7 +241,7 @@ function PackageDetails() {
         "Versailles Palace",
       ],
       includes: [
-        "4 Nights accommodation",
+        "5 Nights accommodation",
         "Daily breakfast",
         "Seine River cruise",
         "Paris city tour",
@@ -252,29 +252,29 @@ function PackageDetails() {
     {
       id: 9,
       title: "Tokyo Discovery",
-      location: "Tokyo • Mount Fuji",
+      location: "Tokyo, Japan",
       duration: "6 Days / 5 Nights",
       price: "₹99,999",
       image:
         "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1400&q=80",
       description:
-        "Discover Tokyo's futuristic cityscape, ancient temples, Japanese cuisine and the spectacular Mount Fuji.",
+        "Discover futuristic Tokyo, ancient temples, Japanese cuisine and the spectacular beauty of Mount Fuji.",
       hotels: [
-        "Tokyo Central Hotel",
-        "Shinjuku Grand Hotel",
+        "Tokyo Grand Hotel",
+        "Tokyo Palace Stay",
       ],
       places: [
+        "Tokyo Tower",
         "Shibuya Crossing",
-        "Tokyo Skytree",
         "Senso-ji Temple",
+        "Shinjuku",
         "Mount Fuji",
-        "Harajuku",
       ],
       includes: [
         "5 Nights accommodation",
         "Daily breakfast",
-        "Mount Fuji tour",
         "Tokyo city tour",
+        "Mount Fuji excursion",
         "Airport transfers",
       ],
     },
@@ -290,133 +290,250 @@ function PackageDetails() {
       description:
         "Relax in a luxurious island resort surrounded by crystal-clear water, white beaches and tropical beauty.",
       hotels: [
-        "Maldives Beach Resort",
-        "Private Island Resort",
+        "Maldives Ocean Resort",
+        "Maldives Paradise Resort",
       ],
       places: [
-        "Private Island",
-        "Coral Reefs",
-        "Lagoon",
-        "Sunset Point",
-        "Local Island",
+        "Male",
+        "Maafushi",
+        "Biyadhoo Island",
+        "Hulhumale",
+        "Vaadhoo Island",
       ],
       includes: [
         "4 Nights accommodation",
         "Daily breakfast",
-        "Island hopping",
-        "Snorkelling experience",
-        "Airport speedboat transfer",
+        "Water villa stay",
+        "Island sightseeing",
+        "Airport transfers",
       ],
     },
   ];
 
-  const pkg = packages.find((item) => item.id === Number(id));
+  const pkg = packages.find(
+    (item) => item.id === Number(id)
+  );
 
   if (!pkg) {
     return (
       <div className="package-not-found">
         <h1>Package Not Found</h1>
-        <Link to="/packages">Back to Packages</Link>
+
+        <Link to="/packages">
+          Back to Packages
+        </Link>
       </div>
     );
   }
 
   return (
     <section className="package-details-page">
+
+      {/* HERO */}
       <div className="package-hero">
-        <img src={pkg.image} alt={pkg.title} />
+
+        <img
+          src={pkg.image}
+          alt={pkg.title}
+        />
 
         <div className="package-hero-overlay">
-          <span>WanderNest Travel Package</span>
+
+          <span>
+            WanderNest Travel Package
+          </span>
+
           <h1>{pkg.title}</h1>
-          <p>📍 {pkg.location}</p>
+
+          <p>
+            📍 {pkg.location}
+          </p>
+
         </div>
+
       </div>
 
+
+      {/* MAIN CONTENT */}
       <div className="package-details-container">
+
         <div className="package-main">
-          <h2>About This Package</h2>
+
+          <h2>
+            About This Package
+          </h2>
 
           <p className="package-long-description">
             {pkg.description}
           </p>
 
+
+          {/* QUICK DETAILS */}
           <div className="details-cards">
+
             <div className="detail-box">
               <span>📅</span>
+
               <h3>Duration</h3>
-              <p>{pkg.duration}</p>
+
+              <p>
+                {pkg.duration}
+              </p>
             </div>
+
 
             <div className="detail-box">
               <span>🏨</span>
+
               <h3>Accommodation</h3>
-              <p>Premium Hotels</p>
+
+              <p>
+                Premium Hotels
+              </p>
             </div>
+
 
             <div className="detail-box">
               <span>🍽️</span>
+
               <h3>Meals</h3>
-              <p>Daily Breakfast</p>
+
+              <p>
+                Daily Breakfast
+              </p>
             </div>
+
 
             <div className="detail-box">
               <span>🚗</span>
+
               <h3>Transfers</h3>
-              <p>Included</p>
+
+              <p>
+                Included
+              </p>
             </div>
+
           </div>
 
+
+          {/* PLACES */}
           <div className="package-section">
-            <h2>📍 Places You Will Visit</h2>
+
+            <h2>
+              📍 Places You Will Visit
+            </h2>
 
             <div className="places-list">
-              {pkg.places.map((place, index) => (
-                <div className="place-item" key={index}>
-                  <span>✓</span>
-                  {place}
-                </div>
-              ))}
+
+              {pkg.places.map(
+                (place, index) => (
+                  <div
+                    className="place-item"
+                    key={index}
+                  >
+                    <span>✓</span>
+
+                    {place}
+                  </div>
+                )
+              )}
+
             </div>
+
           </div>
 
+
+          {/* HOTELS */}
           <div className="package-section">
-            <h2>🏨 Hotels Included</h2>
+
+            <h2>
+              🏨 Hotels Included
+            </h2>
 
             <div className="hotels-list">
-              {pkg.hotels.map((hotel, index) => (
-                <div className="hotel-item" key={index}>
-                  <div className="hotel-icon">🏨</div>
 
-                  <div>
-                    <h3>{hotel}</h3>
-                    <p>Comfortable stay with modern facilities</p>
-                    <small>🕑 Check-in: 2:00 PM</small>
-                    <small>🕑 Check-out: 12:00 PM</small>
+              {pkg.hotels.map(
+                (hotel, index) => (
+                  <div
+                    className="hotel-item"
+                    key={index}
+                  >
+
+                    <div className="hotel-icon">
+                      🏨
+                    </div>
+
+                    <div>
+
+                      <h3>
+                        {hotel}
+                      </h3>
+
+                      <p>
+                        Comfortable stay with
+                        modern facilities
+                      </p>
+
+                      <small>
+                        🕑 Check-in: 2:00 PM
+                      </small>
+
+                      <small>
+                        🕑 Check-out: 12:00 PM
+                      </small>
+
+                    </div>
+
                   </div>
-                </div>
-              ))}
+                )
+              )}
+
             </div>
+
           </div>
 
+
+          {/* INCLUDES */}
           <div className="package-section">
-            <h2>✓ Package Includes</h2>
+
+            <h2>
+              ✓ Package Includes
+            </h2>
 
             <div className="includes-list">
-              {pkg.includes.map((item, index) => (
-                <div key={index}>✓ {item}</div>
-              ))}
+
+              {pkg.includes.map(
+                (item, index) => (
+                  <div key={index}>
+                    ✓ {item}
+                  </div>
+                )
+              )}
+
             </div>
+
           </div>
+
         </div>
 
+
+        {/* SIDEBAR */}
         <aside className="package-sidebar">
+
           <div className="price-card">
-            <span>Starting from</span>
 
-            <h2>{pkg.price}</h2>
+            <span>
+              Starting from
+            </span>
 
-            <p>per person</p>
+            <h2>
+              {pkg.price}
+            </h2>
+
+            <p>
+              per person
+            </p>
 
             <div className="price-line"></div>
 
@@ -424,11 +541,18 @@ function PackageDetails() {
               📅 {pkg.duration}
             </p>
 
-            <p>🏨 Hotel accommodation</p>
+            <p>
+              🏨 Hotel accommodation
+            </p>
 
-            <p>🍽️ Daily breakfast</p>
+            <p>
+              🍽️ Daily breakfast
+            </p>
 
-            <p>🚗 Transfers included</p>
+            <p>
+              🚗 Transfers included
+            </p>
+
 
             <Link
               to={`/booking?destination=${encodeURIComponent(
@@ -439,12 +563,20 @@ function PackageDetails() {
               Book This Package
             </Link>
 
-            <Link to="/packages" className="back-packages">
+
+            <Link
+              to="/packages"
+              className="back-packages"
+            >
               ← Back to Packages
             </Link>
+
           </div>
+
         </aside>
+
       </div>
+
     </section>
   );
 }
