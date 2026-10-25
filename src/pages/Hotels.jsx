@@ -1,136 +1,110 @@
-import { useEffect, useState } from "react";
+
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useWishlist } from "./WishlistContext";
+import hotels, { formatHotelPrice } from "../data/hotels";
 import "../styles/Hotels.css";
 
 function Hotels() {
   const { toggleWishlist, isInWishlist } = useWishlist();
 
-  const [hotels, setHotels] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-
-  // Search state
   const [searchTerm, setSearchTerm] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
+  const [minRating, setMinRating] = useState("0");
+  const [sortBy, setSortBy] = useState("recommended");
 
-  // Fetch hotel data
-  useEffect(() => {
-    const fetchHotels = async () => {
-      try {
-        setLoading(true);
+  const filteredHotels = useMemo(() => {
+    const search = searchTerm.trim().toLowerCase();
 
-        const response = await fetch("/hotels.json");
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch hotel data");
-        }
-
-        const data = await response.json();
-
-        setHotels(data);
-      } catch (err) {
-        console.error("Error loading hotels:", err);
-
-        setError(
-          "Unable to load hotels. Please try again."
+    const results = hotels.filter((hotel) => {
+      const matchesSearch =
+        !search ||
+        hotel.name.toLowerCase().includes(search) ||
+        hotel.location.toLowerCase().includes(search) ||
+        hotel.room.toLowerCase().includes(search) ||
+        hotel.amenities.some((amenity) =>
+          amenity.toLowerCase().includes(search)
         );
-      } finally {
-        setLoading(false);
-      }
-    };
 
-    fetchHotels();
-  }, []);
+      const matchesMinPrice =
+        minPrice === "" || hotel.price >= Number(minPrice);
 
-  // Search hotels by name, location or room
-  const filteredHotels = hotels.filter((hotel) => {
-    const search = searchTerm.toLowerCase().trim();
+      const matchesMaxPrice =
+        maxPrice === "" || hotel.price <= Number(maxPrice);
 
-    return (
-      hotel.name?.toLowerCase().includes(search) ||
-      hotel.location?.toLowerCase().includes(search) ||
-      hotel.room?.toLowerCase().includes(search)
-    );
-  });
+      const matchesRating =
+        hotel.rating >= Number(minRating);
 
-  // Loading screen
-  if (loading) {
-    return (
-      <section className="hotels-page">
+      return (
+        matchesSearch &&
+        matchesMinPrice &&
+        matchesMaxPrice &&
+        matchesRating
+      );
+    });
 
-        <div className="hotels-header">
-          <h1>Find Your Perfect Stay</h1>
+    switch (sortBy) {
+      case "price-low":
+        results.sort((a, b) => a.price - b.price);
+        break;
 
-          <p>
-            Loading hotels...
-          </p>
-        </div>
+      case "price-high":
+        results.sort((a, b) => b.price - a.price);
+        break;
 
-      </section>
-    );
-  }
+      case "rating":
+        results.sort((a, b) => b.rating - a.rating);
+        break;
 
-  // Error screen
-  if (error) {
-    return (
-      <section className="hotels-page">
+      case "name":
+        results.sort((a, b) => a.name.localeCompare(b.name));
+        break;
 
-        <div className="hotels-header">
-          <h1>Find Your Perfect Stay</h1>
+      default:
+        results.sort((a, b) => b.rating - a.rating);
+    }
 
-          <p>
-            {error}
-          </p>
-        </div>
+    return results;
+  }, [searchTerm, minPrice, maxPrice, minRating, sortBy]);
 
-      </section>
-    );
-  }
+  const clearFilters = () => {
+    setSearchTerm("");
+    setMinPrice("");
+    setMaxPrice("");
+    setMinRating("0");
+    setSortBy("recommended");
+  };
 
   return (
     <section className="hotels-page">
-
-      {/* =========================
-          HEADER
-      ========================== */}
-
       <div className="hotels-header">
+        <p className="hotels-eyebrow">WANDERNEST STAYS</p>
 
-        <h1>
-          Find Your Perfect Stay
-        </h1>
+        <h1>Find Your Perfect Stay</h1>
 
         <p>
-          Discover comfortable hotels and luxury resorts
-          for your unforgettable journey.
+          Discover comfortable hotels and resorts for your next journey.
         </p>
-
       </div>
 
-
-      {/* =========================
-          SEARCH BAR
-      ========================== */}
-
       <div className="hotel-search-container">
-
         <div className="hotel-search-box">
-
-          <span className="search-icon">
+          <span className="search-icon" aria-hidden="true">
             🔍
           </span>
 
           <input
-            type="text"
-            placeholder="Search hotels, locations or rooms..."
+            type="search"
+            aria-label="Search hotels"
+            placeholder="Search hotels, locations, rooms or amenities..."
             value={searchTerm}
-            onChange={(e) =>
-              setSearchTerm(e.target.value)
-            }
+            onChange={(event) => setSearchTerm(event.target.value)}
           />
 
           {searchTerm && (
             <button
+              type="button"
               className="clear-search"
               onClick={() => setSearchTerm("")}
               aria-label="Clear search"
@@ -138,184 +112,187 @@ function Hotels() {
               ×
             </button>
           )}
-
         </div>
-
       </div>
 
+      <div className="hotel-filter-toolbar">
+        <div className="hotel-filter-field">
+          <label htmlFor="minimum-price">Minimum price (₹)</label>
+          <input
+            id="minimum-price"
+            type="number"
+            min="0"
+            placeholder="Any"
+            value={minPrice}
+            onChange={(event) => setMinPrice(event.target.value)}
+          />
+        </div>
 
-      {/* =========================
-          SEARCH RESULT
-      ========================== */}
+        <div className="hotel-filter-field">
+          <label htmlFor="maximum-price">Maximum price (₹)</label>
+          <input
+            id="maximum-price"
+            type="number"
+            min="0"
+            placeholder="Any"
+            value={maxPrice}
+            onChange={(event) => setMaxPrice(event.target.value)}
+          />
+        </div>
+
+        <div className="hotel-filter-field">
+          <label htmlFor="minimum-rating">Guest rating</label>
+          <select
+            id="minimum-rating"
+            value={minRating}
+            onChange={(event) => setMinRating(event.target.value)}
+          >
+            <option value="0">All ratings</option>
+            <option value="4">4.0+ stars</option>
+            <option value="4.5">4.5+ stars</option>
+            <option value="4.8">4.8+ stars</option>
+          </select>
+        </div>
+
+        <div className="hotel-filter-field">
+          <label htmlFor="hotel-sort">Sort by</label>
+          <select
+            id="hotel-sort"
+            value={sortBy}
+            onChange={(event) => setSortBy(event.target.value)}
+          >
+            <option value="recommended">Recommended</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="price-high">Price: high to low</option>
+            <option value="rating">Guest rating</option>
+            <option value="name">Hotel name</option>
+          </select>
+        </div>
+
+        <button
+          type="button"
+          className="hotel-clear-filters"
+          onClick={clearFilters}
+        >
+          Clear filters
+        </button>
+      </div>
 
       <div className="hotel-result-info">
-
         <p>
-          {searchTerm
-            ? `${filteredHotels.length} hotel${
-                filteredHotels.length !== 1
-                  ? "s"
-                  : ""
-              } found`
-            : `${hotels.length} hotels available`}
+          <strong>{filteredHotels.length}</strong>{" "}
+          hotel{filteredHotels.length !== 1 ? "s" : ""} found
         </p>
-
       </div>
 
-
-      {/* =========================
-          NO RESULTS
-      ========================== */}
-
       {filteredHotels.length === 0 ? (
-
         <div className="no-hotels">
+          <div className="no-hotels-icon">🔍</div>
+          <h2>No Hotels Found</h2>
+          <p>Try a different location or adjust your filters.</p>
 
-          <div className="no-hotels-icon">
-            🔍
-          </div>
-
-          <h2>
-            No Hotels Found
-          </h2>
-
-          <p>
-            We couldn't find any hotel matching
-            "{searchTerm}".
-          </p>
-
-          <button
-            onClick={() => setSearchTerm("")}
-          >
-            Show All Hotels
+          <button type="button" onClick={clearFilters}>
+            Clear All Filters
           </button>
-
         </div>
-
       ) : (
-
-        /* =========================
-            HOTEL GRID
-        ========================== */
-
         <div className="hotels-grid">
+          {filteredHotels.map((hotel) => {
+            const saved = isInWishlist(hotel.id);
 
-          {filteredHotels.map((hotel) => (
+            return (
+              <article className="hotel-card" key={hotel.id}>
+                <div className="hotel-image-container">
+                  <img
+                    src={hotel.image}
+                    alt={hotel.name}
+                    className="hotel-image"
+                    loading="lazy"
+                  />
 
-            <div
-              className="hotel-card"
-              key={hotel.id}
-            >
-
-              {/* =========================
-                  HOTEL IMAGE
-              ========================== */}
-
-              <div className="hotel-image-container">
-
-                <img
-                  src={hotel.image}
-                  alt={hotel.name}
-                  className="hotel-image"
-                  loading="lazy"
-                />
-
-
-                {/* WISHLIST */}
-
-                <button
-                  className={`wishlist-button ${
-                    isInWishlist(hotel.id)
-                      ? "wishlist-active"
-                      : ""
-                  }`}
-                  onClick={() =>
-                    toggleWishlist(hotel)
-                  }
-                  aria-label={
-                    isInWishlist(hotel.id)
-                      ? "Remove from wishlist"
-                      : "Add to wishlist"
-                  }
-                >
-                  {isInWishlist(hotel.id)
-                    ? "❤️"
-                    : "♡"}
-                </button>
-
-              </div>
-
-
-              {/* =========================
-                  HOTEL DETAILS
-              ========================== */}
-
-              <div className="hotel-content">
-
-                <h2>
-                  {hotel.name}
-                </h2>
-
-                <p className="hotel-location">
-                  📍 {hotel.location}
-                </p>
-
-                <p className="hotel-rating">
-                  ⭐ {hotel.rating}
-                </p>
-
-                <p>
-                  🛏️ {hotel.room}
-                </p>
-
-                <p>
-                  🕐 Check-in:{" "}
-                  {hotel.checkIn}
-                </p>
-
-                <p>
-                  🕐 Check-out:{" "}
-                  {hotel.checkOut}
-                </p>
-
-                <p>
-                  🌙 {hotel.nights}
-                </p>
-
-
-                {/* PRICE */}
-
-                <h3 className="hotel-price">
-
-                  {hotel.price}
-
-                  <span>
-                    {" "}
-                    / night
+                  <span className="hotel-card-tag">
+                    Guest favourite
                   </span>
 
-                </h3>
+                  <button
+                    type="button"
+                    className={`wishlist-button ${
+                      saved ? "wishlist-active" : ""
+                    }`}
+                    onClick={() => toggleWishlist(hotel)}
+                    aria-label={
+                      saved
+                        ? `Remove ${hotel.name} from wishlist`
+                        : `Add ${hotel.name} to wishlist`
+                    }
+                    aria-pressed={saved}
+                  >
+                    {saved ? "♥" : "♡"}
+                  </button>
+                </div>
 
+                <div className="hotel-content">
+                  <div className="hotel-title-row">
+                    <h2>{hotel.name}</h2>
+                    <span className="hotel-rating">
+                      ★ {hotel.rating.toFixed(1)}
+                    </span>
+                  </div>
 
-                {/* VIEW HOTEL */}
+                  <p className="hotel-location">
+                    📍 {hotel.location}
+                  </p>
 
-                <Link
-                  to={`/hotels/${hotel.id}`}
-                  className="view-hotel-button"
-                >
-                  View Hotel
-                </Link>
+                  <p className="hotel-room">
+                    🛏️ {hotel.room}
+                  </p>
 
-              </div>
+                  <div className="hotel-amenities-preview">
+                    {hotel.amenities.slice(0, 3).map((amenity) => (
+                      <span key={amenity}>{amenity}</span>
+                    ))}
+                  </div>
 
-            </div>
+                  <div className="hotel-card-price-row">
+                    <div>
+                      <h3 className="hotel-price">
+                        {formatHotelPrice(hotel.price)}
+                      </h3>
+                      <span className="hotel-price-caption">
+                        per room / night
+                      </span>
+                    </div>
+                  </div>
 
-          ))}
+                  <div className="hotel-actions">
+                    <Link
+                      to={`/hotels/${hotel.id}`}
+                      className="view-hotel-button"
+                    >
+                      View Details
+                    </Link>
 
+                    <Link
+                      to="/booking"
+                      state={{
+                        bookingType: "hotel",
+                        destination: hotel.location,
+                        hotel: hotel.name,
+                        price: hotel.price,
+                        hotelId: hotel.id,
+                        room: hotel.room,
+                      }}
+                      className="book-hotel-button"
+                    >
+                      Book Hotel
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
-
       )}
-
     </section>
   );
 }

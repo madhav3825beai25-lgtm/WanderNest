@@ -1,0 +1,5092 @@
+[
+  {
+    "id": "FD001",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Delhi",
+    "toCity": "Hyderabad",
+    "provider": "IndiGo",
+    "number": "WN1000",
+    "departure": "05:30",
+    "duration": "2h 00m",
+    "fare": 3400,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD002",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Mumbai",
+    "toCity": "Lucknow",
+    "provider": "Vistara Demo",
+    "number": "WN1001",
+    "departure": "08:30",
+    "duration": "3h 07m",
+    "fare": 3573,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD003",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Bengaluru",
+    "toCity": "Bhopal",
+    "provider": "IndiGo",
+    "number": "WN1002",
+    "departure": "11:30",
+    "duration": "4h 14m",
+    "fare": 3746,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD004",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Hyderabad",
+    "toCity": "Ranchi",
+    "provider": "Vistara Demo",
+    "number": "WN1003",
+    "departure": "14:30",
+    "duration": "5h 21m",
+    "fare": 3919,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD005",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Chennai",
+    "toCity": "Raipur",
+    "provider": "Air India",
+    "number": "WN1004",
+    "departure": "17:30",
+    "duration": "6h 28m",
+    "fare": 4092,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD006",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Kolkata",
+    "toCity": "Vadodara",
+    "provider": "Emirates Demo",
+    "number": "WN1005",
+    "departure": "20:30",
+    "duration": "7h 35m",
+    "fare": 4265,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD007",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Goa",
+    "toCity": "Vijayawada",
+    "provider": "Air India",
+    "number": "WN1006",
+    "departure": "23:30",
+    "duration": "8h 42m",
+    "fare": 4438,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD008",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Jaipur",
+    "toCity": "Bengaluru",
+    "provider": "Emirates Demo",
+    "number": "WN1007",
+    "departure": "02:30",
+    "duration": "9h 49m",
+    "fare": 4611,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD009",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Ahmedabad",
+    "toCity": "Pune",
+    "provider": "Akasa Air",
+    "number": "WN1008",
+    "departure": "05:30",
+    "duration": "2h 56m",
+    "fare": 4784,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD010",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Pune",
+    "toCity": "Varanasi",
+    "provider": "Lufthansa Demo",
+    "number": "WN1009",
+    "departure": "08:30",
+    "duration": "3h 03m",
+    "fare": 4957,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD011",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Lucknow",
+    "toCity": "Surat",
+    "provider": "Akasa Air",
+    "number": "WN1010",
+    "departure": "11:30",
+    "duration": "4h 10m",
+    "fare": 5130,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD012",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Chandigarh",
+    "toCity": "Mangaluru",
+    "provider": "Lufthansa Demo",
+    "number": "WN1011",
+    "departure": "14:30",
+    "duration": "5h 17m",
+    "fare": 5303,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD013",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Kochi",
+    "toCity": "Tirupati",
+    "provider": "Vistara Demo",
+    "number": "WN1012",
+    "departure": "17:30",
+    "duration": "6h 24m",
+    "fare": 5476,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD014",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Guwahati",
+    "toCity": "Mysuru",
+    "provider": "IndiGo",
+    "number": "WN1013",
+    "departure": "20:30",
+    "duration": "7h 31m",
+    "fare": 5649,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD015",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Srinagar",
+    "toCity": "Mumbai",
+    "provider": "Vistara Demo",
+    "number": "WN1014",
+    "departure": "23:30",
+    "duration": "8h 38m",
+    "fare": 5822,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD016",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Amritsar",
+    "toCity": "Ahmedabad",
+    "provider": "IndiGo",
+    "number": "WN1015",
+    "departure": "02:30",
+    "duration": "9h 45m",
+    "fare": 5995,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD017",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Varanasi",
+    "toCity": "Amritsar",
+    "provider": "Emirates Demo",
+    "number": "WN1016",
+    "departure": "05:30",
+    "duration": "2h 52m",
+    "fare": 6168,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD018",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Bhopal",
+    "toCity": "Nagpur",
+    "provider": "Air India",
+    "number": "WN1017",
+    "departure": "08:30",
+    "duration": "3h 59m",
+    "fare": 6341,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD019",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Indore",
+    "toCity": "Madurai",
+    "provider": "Emirates Demo",
+    "number": "WN1018",
+    "departure": "11:30",
+    "duration": "4h 06m",
+    "fare": 6514,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD020",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Patna",
+    "toCity": "Port Blair",
+    "provider": "Air India",
+    "number": "WN1019",
+    "departure": "14:30",
+    "duration": "5h 13m",
+    "fare": 6687,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD021",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Bhubaneswar",
+    "toCity": "Nashik",
+    "provider": "Lufthansa Demo",
+    "number": "WN1020",
+    "departure": "17:30",
+    "duration": "6h 20m",
+    "fare": 6860,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD022",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Visakhapatnam",
+    "toCity": "Delhi",
+    "provider": "Akasa Air",
+    "number": "WN1021",
+    "departure": "20:30",
+    "duration": "7h 27m",
+    "fare": 7033,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD023",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Nagpur",
+    "toCity": "Jaipur",
+    "provider": "Lufthansa Demo",
+    "number": "WN1022",
+    "departure": "23:30",
+    "duration": "8h 34m",
+    "fare": 7206,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD024",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Surat",
+    "toCity": "Srinagar",
+    "provider": "Akasa Air",
+    "number": "WN1023",
+    "departure": "02:30",
+    "duration": "9h 41m",
+    "fare": 7379,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD025",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Ranchi",
+    "toCity": "Visakhapatnam",
+    "provider": "IndiGo",
+    "number": "WN1024",
+    "departure": "05:30",
+    "duration": "2h 48m",
+    "fare": 7552,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD026",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Dehradun",
+    "toCity": "Coimbatore",
+    "provider": "Vistara Demo",
+    "number": "WN1025",
+    "departure": "08:30",
+    "duration": "3h 55m",
+    "fare": 7725,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD027",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Jodhpur",
+    "toCity": "Imphal",
+    "provider": "IndiGo",
+    "number": "WN1026",
+    "departure": "11:30",
+    "duration": "4h 02m",
+    "fare": 7898,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD028",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Udaipur",
+    "toCity": "Jabalpur",
+    "provider": "Vistara Demo",
+    "number": "WN1027",
+    "departure": "14:30",
+    "duration": "5h 09m",
+    "fare": 8071,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD029",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Coimbatore",
+    "toCity": "Darbhanga",
+    "provider": "Air India",
+    "number": "WN1028",
+    "departure": "17:30",
+    "duration": "6h 16m",
+    "fare": 8244,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD030",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Madurai",
+    "toCity": "Goa",
+    "provider": "Emirates Demo",
+    "number": "WN1029",
+    "departure": "20:30",
+    "duration": "7h 23m",
+    "fare": 8417,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD031",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Mangaluru",
+    "toCity": "Guwahati",
+    "provider": "Air India",
+    "number": "WN1030",
+    "departure": "23:30",
+    "duration": "8h 30m",
+    "fare": 8590,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD032",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Raipur",
+    "toCity": "Bhubaneswar",
+    "provider": "Emirates Demo",
+    "number": "WN1031",
+    "departure": "02:30",
+    "duration": "9h 37m",
+    "fare": 8763,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD033",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Jammu",
+    "toCity": "Udaipur",
+    "provider": "Akasa Air",
+    "number": "WN1032",
+    "departure": "05:30",
+    "duration": "2h 44m",
+    "fare": 8936,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD034",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Leh",
+    "toCity": "Agartala",
+    "provider": "Lufthansa Demo",
+    "number": "WN1033",
+    "departure": "08:30",
+    "duration": "3h 51m",
+    "fare": 9109,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD035",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Agartala",
+    "toCity": "Gwalior",
+    "provider": "Akasa Air",
+    "number": "WN1034",
+    "departure": "11:30",
+    "duration": "4h 58m",
+    "fare": 9282,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD036",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Imphal",
+    "toCity": "Bagdogra",
+    "provider": "Lufthansa Demo",
+    "number": "WN1035",
+    "departure": "14:30",
+    "duration": "5h 05m",
+    "fare": 9455,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD037",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Port Blair",
+    "toCity": "Kolkata",
+    "provider": "Vistara Demo",
+    "number": "WN1036",
+    "departure": "17:30",
+    "duration": "6h 12m",
+    "fare": 9628,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD038",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Tirupati",
+    "toCity": "Kochi",
+    "provider": "IndiGo",
+    "number": "WN1037",
+    "departure": "20:30",
+    "duration": "7h 19m",
+    "fare": 9801,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD039",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Vadodara",
+    "toCity": "Patna",
+    "provider": "Vistara Demo",
+    "number": "WN1038",
+    "departure": "23:30",
+    "duration": "8h 26m",
+    "fare": 9974,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD040",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Rajkot",
+    "toCity": "Jodhpur",
+    "provider": "IndiGo",
+    "number": "WN1039",
+    "departure": "02:30",
+    "duration": "9h 33m",
+    "fare": 10147,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD041",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Kanpur",
+    "toCity": "Leh",
+    "provider": "Emirates Demo",
+    "number": "WN1040",
+    "departure": "05:30",
+    "duration": "2h 40m",
+    "fare": 10320,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD042",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Gwalior",
+    "toCity": "Kanpur",
+    "provider": "Air India",
+    "number": "WN1041",
+    "departure": "08:30",
+    "duration": "3h 47m",
+    "fare": 10493,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD043",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Jabalpur",
+    "toCity": "Silchar",
+    "provider": "Emirates Demo",
+    "number": "WN1042",
+    "departure": "11:30",
+    "duration": "4h 54m",
+    "fare": 10666,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD044",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Nashik",
+    "toCity": "Chennai",
+    "provider": "Air India",
+    "number": "WN1043",
+    "departure": "14:30",
+    "duration": "5h 01m",
+    "fare": 10839,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD045",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Mysuru",
+    "toCity": "Chandigarh",
+    "provider": "Lufthansa Demo",
+    "number": "WN1044",
+    "departure": "17:30",
+    "duration": "6h 08m",
+    "fare": 3512,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD046",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Vijayawada",
+    "toCity": "Indore",
+    "provider": "Akasa Air",
+    "number": "WN1045",
+    "departure": "20:30",
+    "duration": "7h 15m",
+    "fare": 3685,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD047",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Dibrugarh",
+    "toCity": "Dehradun",
+    "provider": "Lufthansa Demo",
+    "number": "WN1046",
+    "departure": "23:30",
+    "duration": "8h 22m",
+    "fare": 3858,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD048",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Silchar",
+    "toCity": "Jammu",
+    "provider": "Akasa Air",
+    "number": "WN1047",
+    "departure": "02:30",
+    "duration": "9h 29m",
+    "fare": 4031,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD049",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Bagdogra",
+    "toCity": "Rajkot",
+    "provider": "IndiGo",
+    "number": "WN1048",
+    "departure": "05:30",
+    "duration": "2h 36m",
+    "fare": 4204,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FD050",
+    "kind": "flight",
+    "international": false,
+    "fromCity": "Darbhanga",
+    "toCity": "Dibrugarh",
+    "provider": "Vistara Demo",
+    "number": "WN1049",
+    "departure": "08:30",
+    "duration": "3h 43m",
+    "fare": 4377,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI001",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "London",
+    "toCity": "Singapore",
+    "provider": "IndiGo",
+    "number": "WN1000",
+    "departure": "05:30",
+    "duration": "2h 00m",
+    "fare": 21400,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI002",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Paris",
+    "toCity": "Frankfurt",
+    "provider": "Vistara Demo",
+    "number": "WN1001",
+    "departure": "08:30",
+    "duration": "3h 07m",
+    "fare": 21573,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI003",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Dubai",
+    "toCity": "Munich",
+    "provider": "IndiGo",
+    "number": "WN1002",
+    "departure": "11:30",
+    "duration": "4h 14m",
+    "fare": 21746,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI004",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Singapore",
+    "toCity": "Stockholm",
+    "provider": "Vistara Demo",
+    "number": "WN1003",
+    "departure": "14:30",
+    "duration": "5h 21m",
+    "fare": 21919,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI005",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Tokyo",
+    "toCity": "Jeddah",
+    "provider": "Air India",
+    "number": "WN1004",
+    "departure": "17:30",
+    "duration": "6h 28m",
+    "fare": 22092,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI006",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Bangkok",
+    "toCity": "Beijing",
+    "provider": "Emirates Demo",
+    "number": "WN1005",
+    "departure": "20:30",
+    "duration": "7h 35m",
+    "fare": 22265,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI007",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "New York",
+    "toCity": "Colombo",
+    "provider": "Air India",
+    "number": "WN1006",
+    "departure": "23:30",
+    "duration": "8h 42m",
+    "fare": 22438,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI008",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Toronto",
+    "toCity": "Chicago",
+    "provider": "Emirates Demo",
+    "number": "WN1007",
+    "departure": "02:30",
+    "duration": "9h 49m",
+    "fare": 22611,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI009",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Sydney",
+    "toCity": "Geneva",
+    "provider": "Akasa Air",
+    "number": "WN1008",
+    "departure": "05:30",
+    "duration": "2h 56m",
+    "fare": 22784,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI010",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Melbourne",
+    "toCity": "New York",
+    "provider": "Lufthansa Demo",
+    "number": "WN1009",
+    "departure": "08:30",
+    "duration": "3h 03m",
+    "fare": 22957,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI011",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Frankfurt",
+    "toCity": "Amsterdam",
+    "provider": "Akasa Air",
+    "number": "WN1010",
+    "departure": "11:30",
+    "duration": "4h 10m",
+    "fare": 23130,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI012",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Rome",
+    "toCity": "Budapest",
+    "provider": "Lufthansa Demo",
+    "number": "WN1011",
+    "departure": "14:30",
+    "duration": "5h 17m",
+    "fare": 23303,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI013",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Zurich",
+    "toCity": "Istanbul",
+    "provider": "Vistara Demo",
+    "number": "WN1012",
+    "departure": "17:30",
+    "duration": "6h 24m",
+    "fare": 23476,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI014",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Amsterdam",
+    "toCity": "Hong Kong",
+    "provider": "IndiGo",
+    "number": "WN1013",
+    "departure": "20:30",
+    "duration": "7h 31m",
+    "fare": 23649,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI015",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Madrid",
+    "toCity": "Hanoi",
+    "provider": "Vistara Demo",
+    "number": "WN1014",
+    "departure": "23:30",
+    "duration": "8h 38m",
+    "fare": 23822,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI016",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Barcelona",
+    "toCity": "Male",
+    "provider": "IndiGo",
+    "number": "WN1015",
+    "departure": "02:30",
+    "duration": "9h 45m",
+    "fare": 23995,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI017",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Berlin",
+    "toCity": "Nairobi",
+    "provider": "Emirates Demo",
+    "number": "WN1016",
+    "departure": "05:30",
+    "duration": "2h 52m",
+    "fare": 24168,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI018",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Munich",
+    "toCity": "Dubai",
+    "provider": "Air India",
+    "number": "WN1017",
+    "departure": "08:30",
+    "duration": "3h 59m",
+    "fare": 24341,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI019",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Vienna",
+    "toCity": "Melbourne",
+    "provider": "Emirates Demo",
+    "number": "WN1018",
+    "departure": "11:30",
+    "duration": "4h 06m",
+    "fare": 24514,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI020",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Prague",
+    "toCity": "Berlin",
+    "provider": "Air India",
+    "number": "WN1019",
+    "departure": "14:30",
+    "duration": "5h 13m",
+    "fare": 24687,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI021",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Budapest",
+    "toCity": "Copenhagen",
+    "provider": "Lufthansa Demo",
+    "number": "WN1020",
+    "departure": "17:30",
+    "duration": "6h 20m",
+    "fare": 24860,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI022",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Warsaw",
+    "toCity": "Riyadh",
+    "provider": "Akasa Air",
+    "number": "WN1021",
+    "departure": "20:30",
+    "duration": "7h 27m",
+    "fare": 25033,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI023",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Brussels",
+    "toCity": "Kyoto",
+    "provider": "Lufthansa Demo",
+    "number": "WN1022",
+    "departure": "23:30",
+    "duration": "8h 34m",
+    "fare": 25206,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI024",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Copenhagen",
+    "toCity": "Phuket",
+    "provider": "Akasa Air",
+    "number": "WN1023",
+    "departure": "02:30",
+    "duration": "9h 41m",
+    "fare": 25379,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI025",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Stockholm",
+    "toCity": "San Francisco",
+    "provider": "IndiGo",
+    "number": "WN1024",
+    "departure": "05:30",
+    "duration": "2h 48m",
+    "fare": 25552,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI026",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Oslo",
+    "toCity": "Lisbon",
+    "provider": "Vistara Demo",
+    "number": "WN1025",
+    "departure": "08:30",
+    "duration": "3h 55m",
+    "fare": 25725,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI027",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Helsinki",
+    "toCity": "Bangkok",
+    "provider": "IndiGo",
+    "number": "WN1026",
+    "departure": "11:30",
+    "duration": "4h 02m",
+    "fare": 25898,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI028",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Istanbul",
+    "toCity": "Zurich",
+    "provider": "Vistara Demo",
+    "number": "WN1027",
+    "departure": "14:30",
+    "duration": "5h 09m",
+    "fare": 26071,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI029",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Doha",
+    "toCity": "Prague",
+    "provider": "Air India",
+    "number": "WN1028",
+    "departure": "17:30",
+    "duration": "6h 16m",
+    "fare": 26244,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI030",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Abu Dhabi",
+    "toCity": "Helsinki",
+    "provider": "Emirates Demo",
+    "number": "WN1029",
+    "departure": "20:30",
+    "duration": "7h 23m",
+    "fare": 26417,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI031",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Riyadh",
+    "toCity": "Kuala Lumpur",
+    "provider": "Air India",
+    "number": "WN1030",
+    "departure": "23:30",
+    "duration": "8h 30m",
+    "fare": 26590,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI032",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Jeddah",
+    "toCity": "Taipei",
+    "provider": "Emirates Demo",
+    "number": "WN1031",
+    "departure": "02:30",
+    "duration": "9h 37m",
+    "fare": 26763,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI033",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Muscat",
+    "toCity": "Dhaka",
+    "provider": "Akasa Air",
+    "number": "WN1032",
+    "departure": "05:30",
+    "duration": "2h 44m",
+    "fare": 26936,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI034",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Kuala Lumpur",
+    "toCity": "Cape Town",
+    "provider": "Lufthansa Demo",
+    "number": "WN1033",
+    "departure": "08:30",
+    "duration": "3h 51m",
+    "fare": 27109,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI035",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Hong Kong",
+    "toCity": "Paris",
+    "provider": "Akasa Air",
+    "number": "WN1034",
+    "departure": "11:30",
+    "duration": "4h 58m",
+    "fare": 27282,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI036",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Seoul",
+    "toCity": "Sydney",
+    "provider": "Lufthansa Demo",
+    "number": "WN1035",
+    "departure": "14:30",
+    "duration": "5h 05m",
+    "fare": 27455,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI037",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Osaka",
+    "toCity": "Barcelona",
+    "provider": "Vistara Demo",
+    "number": "WN1036",
+    "departure": "17:30",
+    "duration": "6h 12m",
+    "fare": 27628,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI038",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Kyoto",
+    "toCity": "Brussels",
+    "provider": "IndiGo",
+    "number": "WN1037",
+    "departure": "20:30",
+    "duration": "7h 19m",
+    "fare": 27801,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI039",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Beijing",
+    "toCity": "Abu Dhabi",
+    "provider": "Vistara Demo",
+    "number": "WN1038",
+    "departure": "23:30",
+    "duration": "8h 26m",
+    "fare": 27974,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI040",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Shanghai",
+    "toCity": "Osaka",
+    "provider": "IndiGo",
+    "number": "WN1039",
+    "departure": "02:30",
+    "duration": "9h 33m",
+    "fare": 28147,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI041",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Taipei",
+    "toCity": "Bali",
+    "provider": "Emirates Demo",
+    "number": "WN1040",
+    "departure": "05:30",
+    "duration": "2h 40m",
+    "fare": 28320,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI042",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Hanoi",
+    "toCity": "Los Angeles",
+    "provider": "Air India",
+    "number": "WN1041",
+    "departure": "08:30",
+    "duration": "3h 47m",
+    "fare": 28493,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI043",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Ho Chi Minh City",
+    "toCity": "Athens",
+    "provider": "Emirates Demo",
+    "number": "WN1042",
+    "departure": "11:30",
+    "duration": "4h 54m",
+    "fare": 28666,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI044",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Bali",
+    "toCity": "Tokyo",
+    "provider": "Air India",
+    "number": "WN1043",
+    "departure": "14:30",
+    "duration": "5h 01m",
+    "fare": 28839,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI045",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Phuket",
+    "toCity": "Rome",
+    "provider": "Lufthansa Demo",
+    "number": "WN1044",
+    "departure": "17:30",
+    "duration": "6h 08m",
+    "fare": 29012,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI046",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Colombo",
+    "toCity": "Vienna",
+    "provider": "Akasa Air",
+    "number": "WN1045",
+    "departure": "20:30",
+    "duration": "7h 15m",
+    "fare": 29185,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI047",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Kathmandu",
+    "toCity": "Oslo",
+    "provider": "Lufthansa Demo",
+    "number": "WN1046",
+    "departure": "23:30",
+    "duration": "8h 22m",
+    "fare": 29358,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI048",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Dhaka",
+    "toCity": "Muscat",
+    "provider": "Akasa Air",
+    "number": "WN1047",
+    "departure": "02:30",
+    "duration": "9h 29m",
+    "fare": 29531,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI049",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Male",
+    "toCity": "Shanghai",
+    "provider": "IndiGo",
+    "number": "WN1048",
+    "departure": "05:30",
+    "duration": "2h 36m",
+    "fare": 29704,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI050",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Auckland",
+    "toCity": "Kathmandu",
+    "provider": "Vistara Demo",
+    "number": "WN1049",
+    "departure": "08:30",
+    "duration": "3h 43m",
+    "fare": 29877,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI051",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Los Angeles",
+    "toCity": "Vancouver",
+    "provider": "IndiGo",
+    "number": "WN1050",
+    "departure": "11:30",
+    "duration": "4h 50m",
+    "fare": 30050,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI052",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "San Francisco",
+    "toCity": "London",
+    "provider": "Vistara Demo",
+    "number": "WN1051",
+    "departure": "14:30",
+    "duration": "5h 57m",
+    "fare": 30223,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI053",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Chicago",
+    "toCity": "Toronto",
+    "provider": "Air India",
+    "number": "WN1052",
+    "departure": "17:30",
+    "duration": "6h 04m",
+    "fare": 30396,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI054",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Vancouver",
+    "toCity": "Madrid",
+    "provider": "Emirates Demo",
+    "number": "WN1053",
+    "departure": "20:30",
+    "duration": "7h 11m",
+    "fare": 30569,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI055",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Cape Town",
+    "toCity": "Warsaw",
+    "provider": "Air India",
+    "number": "WN1054",
+    "departure": "23:30",
+    "duration": "8h 18m",
+    "fare": 30742,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI056",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Nairobi",
+    "toCity": "Doha",
+    "provider": "Emirates Demo",
+    "number": "WN1055",
+    "departure": "02:30",
+    "duration": "9h 25m",
+    "fare": 30915,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI057",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Cairo",
+    "toCity": "Seoul",
+    "provider": "Akasa Air",
+    "number": "WN1056",
+    "departure": "05:30",
+    "duration": "2h 32m",
+    "fare": 31088,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI058",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Athens",
+    "toCity": "Ho Chi Minh City",
+    "provider": "Lufthansa Demo",
+    "number": "WN1057",
+    "departure": "08:30",
+    "duration": "3h 39m",
+    "fare": 31261,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI059",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Lisbon",
+    "toCity": "Auckland",
+    "provider": "Akasa Air",
+    "number": "WN1058",
+    "departure": "11:30",
+    "duration": "4h 46m",
+    "fare": 31434,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "FI060",
+    "kind": "flight",
+    "international": true,
+    "fromCity": "Geneva",
+    "toCity": "Cairo",
+    "provider": "Lufthansa Demo",
+    "number": "WN1059",
+    "departure": "14:30",
+    "duration": "5h 53m",
+    "fare": 31607,
+    "classes": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD001",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Delhi",
+    "toCity": "Hyderabad",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1000",
+    "departure": "05:30",
+    "duration": "2h 00m",
+    "fare": 450,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD002",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mumbai",
+    "toCity": "Lucknow",
+    "provider": "Eurostar Demo",
+    "number": "TR1001",
+    "departure": "08:30",
+    "duration": "3h 07m",
+    "fare": 623,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD003",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bengaluru",
+    "toCity": "Bhopal",
+    "provider": "Shinkansen Demo",
+    "number": "TR1002",
+    "departure": "11:30",
+    "duration": "4h 14m",
+    "fare": 796,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD004",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Hyderabad",
+    "toCity": "Ranchi",
+    "provider": "Intercity Demo",
+    "number": "TR1003",
+    "departure": "14:30",
+    "duration": "5h 21m",
+    "fare": 969,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD005",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Chennai",
+    "toCity": "Raipur",
+    "provider": "Shinkansen Demo",
+    "number": "TR1004",
+    "departure": "17:30",
+    "duration": "6h 28m",
+    "fare": 1142,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD006",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kolkata",
+    "toCity": "Vadodara",
+    "provider": "Intercity Demo",
+    "number": "TR1005",
+    "departure": "20:30",
+    "duration": "7h 35m",
+    "fare": 1315,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD007",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Goa",
+    "toCity": "Vijayawada",
+    "provider": "ICE Demo",
+    "number": "TR1006",
+    "departure": "23:30",
+    "duration": "8h 42m",
+    "fare": 1488,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD008",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jaipur",
+    "toCity": "Bengaluru",
+    "provider": "Rajdhani Demo",
+    "number": "TR1007",
+    "departure": "02:30",
+    "duration": "9h 49m",
+    "fare": 1661,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD009",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Ahmedabad",
+    "toCity": "Pune",
+    "provider": "ICE Demo",
+    "number": "TR1008",
+    "departure": "05:30",
+    "duration": "2h 56m",
+    "fare": 1834,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD010",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Pune",
+    "toCity": "Varanasi",
+    "provider": "Rajdhani Demo",
+    "number": "TR1009",
+    "departure": "08:30",
+    "duration": "3h 03m",
+    "fare": 2007,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD011",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Lucknow",
+    "toCity": "Surat",
+    "provider": "TGV Demo",
+    "number": "TR1010",
+    "departure": "11:30",
+    "duration": "4h 10m",
+    "fare": 2180,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD012",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Chandigarh",
+    "toCity": "Mangaluru",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1011",
+    "departure": "14:30",
+    "duration": "5h 17m",
+    "fare": 2353,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD013",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kochi",
+    "toCity": "Tirupati",
+    "provider": "TGV Demo",
+    "number": "TR1012",
+    "departure": "17:30",
+    "duration": "6h 24m",
+    "fare": 2526,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD014",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Guwahati",
+    "toCity": "Mysuru",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1013",
+    "departure": "20:30",
+    "duration": "7h 31m",
+    "fare": 2699,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD015",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Srinagar",
+    "toCity": "Mumbai",
+    "provider": "Eurostar Demo",
+    "number": "TR1014",
+    "departure": "23:30",
+    "duration": "8h 38m",
+    "fare": 2872,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD016",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Amritsar",
+    "toCity": "Ahmedabad",
+    "provider": "Shinkansen Demo",
+    "number": "TR1015",
+    "departure": "02:30",
+    "duration": "9h 45m",
+    "fare": 3045,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD017",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Varanasi",
+    "toCity": "Amritsar",
+    "provider": "Eurostar Demo",
+    "number": "TR1016",
+    "departure": "05:30",
+    "duration": "2h 52m",
+    "fare": 3218,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD018",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bhopal",
+    "toCity": "Nagpur",
+    "provider": "Shinkansen Demo",
+    "number": "TR1017",
+    "departure": "08:30",
+    "duration": "3h 59m",
+    "fare": 3391,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD019",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Indore",
+    "toCity": "Madurai",
+    "provider": "Intercity Demo",
+    "number": "TR1018",
+    "departure": "11:30",
+    "duration": "4h 06m",
+    "fare": 3564,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD020",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Patna",
+    "toCity": "Port Blair",
+    "provider": "ICE Demo",
+    "number": "TR1019",
+    "departure": "14:30",
+    "duration": "5h 13m",
+    "fare": 3737,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD021",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bhubaneswar",
+    "toCity": "Nashik",
+    "provider": "Intercity Demo",
+    "number": "TR1020",
+    "departure": "17:30",
+    "duration": "6h 20m",
+    "fare": 3910,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD022",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Visakhapatnam",
+    "toCity": "Delhi",
+    "provider": "ICE Demo",
+    "number": "TR1021",
+    "departure": "20:30",
+    "duration": "7h 27m",
+    "fare": 4083,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD023",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Nagpur",
+    "toCity": "Jaipur",
+    "provider": "Rajdhani Demo",
+    "number": "TR1022",
+    "departure": "23:30",
+    "duration": "8h 34m",
+    "fare": 4256,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD024",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Surat",
+    "toCity": "Srinagar",
+    "provider": "TGV Demo",
+    "number": "TR1023",
+    "departure": "02:30",
+    "duration": "9h 41m",
+    "fare": 4429,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD025",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Ranchi",
+    "toCity": "Visakhapatnam",
+    "provider": "Rajdhani Demo",
+    "number": "TR1024",
+    "departure": "05:30",
+    "duration": "2h 48m",
+    "fare": 4602,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD026",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Dehradun",
+    "toCity": "Coimbatore",
+    "provider": "TGV Demo",
+    "number": "TR1025",
+    "departure": "08:30",
+    "duration": "3h 55m",
+    "fare": 4775,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD027",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jodhpur",
+    "toCity": "Imphal",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1026",
+    "departure": "11:30",
+    "duration": "4h 02m",
+    "fare": 4948,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD028",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Udaipur",
+    "toCity": "Jabalpur",
+    "provider": "Eurostar Demo",
+    "number": "TR1027",
+    "departure": "14:30",
+    "duration": "5h 09m",
+    "fare": 5121,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD029",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Coimbatore",
+    "toCity": "Darbhanga",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1028",
+    "departure": "17:30",
+    "duration": "6h 16m",
+    "fare": 5294,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD030",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Madurai",
+    "toCity": "Goa",
+    "provider": "Eurostar Demo",
+    "number": "TR1029",
+    "departure": "20:30",
+    "duration": "7h 23m",
+    "fare": 5467,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD031",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mangaluru",
+    "toCity": "Guwahati",
+    "provider": "Shinkansen Demo",
+    "number": "TR1030",
+    "departure": "23:30",
+    "duration": "8h 30m",
+    "fare": 5640,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD032",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Raipur",
+    "toCity": "Bhubaneswar",
+    "provider": "Intercity Demo",
+    "number": "TR1031",
+    "departure": "02:30",
+    "duration": "9h 37m",
+    "fare": 5813,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD033",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jammu",
+    "toCity": "Udaipur",
+    "provider": "Shinkansen Demo",
+    "number": "TR1032",
+    "departure": "05:30",
+    "duration": "2h 44m",
+    "fare": 5986,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD034",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Leh",
+    "toCity": "Agartala",
+    "provider": "Intercity Demo",
+    "number": "TR1033",
+    "departure": "08:30",
+    "duration": "3h 51m",
+    "fare": 6159,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD035",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Agartala",
+    "toCity": "Gwalior",
+    "provider": "ICE Demo",
+    "number": "TR1034",
+    "departure": "11:30",
+    "duration": "4h 58m",
+    "fare": 6332,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD036",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Imphal",
+    "toCity": "Bagdogra",
+    "provider": "Rajdhani Demo",
+    "number": "TR1035",
+    "departure": "14:30",
+    "duration": "5h 05m",
+    "fare": 6505,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD037",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Port Blair",
+    "toCity": "Kolkata",
+    "provider": "ICE Demo",
+    "number": "TR1036",
+    "departure": "17:30",
+    "duration": "6h 12m",
+    "fare": 6678,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD038",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Tirupati",
+    "toCity": "Kochi",
+    "provider": "Rajdhani Demo",
+    "number": "TR1037",
+    "departure": "20:30",
+    "duration": "7h 19m",
+    "fare": 6851,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD039",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Vadodara",
+    "toCity": "Patna",
+    "provider": "TGV Demo",
+    "number": "TR1038",
+    "departure": "23:30",
+    "duration": "8h 26m",
+    "fare": 7024,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD040",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Rajkot",
+    "toCity": "Jodhpur",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1039",
+    "departure": "02:30",
+    "duration": "9h 33m",
+    "fare": 7197,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD041",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kanpur",
+    "toCity": "Leh",
+    "provider": "TGV Demo",
+    "number": "TR1040",
+    "departure": "05:30",
+    "duration": "2h 40m",
+    "fare": 7370,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD042",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Gwalior",
+    "toCity": "Kanpur",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1041",
+    "departure": "08:30",
+    "duration": "3h 47m",
+    "fare": 7543,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD043",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jabalpur",
+    "toCity": "Silchar",
+    "provider": "Eurostar Demo",
+    "number": "TR1042",
+    "departure": "11:30",
+    "duration": "4h 54m",
+    "fare": 7716,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD044",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Nashik",
+    "toCity": "Chennai",
+    "provider": "Shinkansen Demo",
+    "number": "TR1043",
+    "departure": "14:30",
+    "duration": "5h 01m",
+    "fare": 7889,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD045",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mysuru",
+    "toCity": "Chandigarh",
+    "provider": "Eurostar Demo",
+    "number": "TR1044",
+    "departure": "17:30",
+    "duration": "6h 08m",
+    "fare": 562,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD046",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Vijayawada",
+    "toCity": "Indore",
+    "provider": "Shinkansen Demo",
+    "number": "TR1045",
+    "departure": "20:30",
+    "duration": "7h 15m",
+    "fare": 735,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD047",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Dibrugarh",
+    "toCity": "Dehradun",
+    "provider": "Intercity Demo",
+    "number": "TR1046",
+    "departure": "23:30",
+    "duration": "8h 22m",
+    "fare": 908,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD048",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Silchar",
+    "toCity": "Jammu",
+    "provider": "ICE Demo",
+    "number": "TR1047",
+    "departure": "02:30",
+    "duration": "9h 29m",
+    "fare": 1081,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD049",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bagdogra",
+    "toCity": "Rajkot",
+    "provider": "Intercity Demo",
+    "number": "TR1048",
+    "departure": "05:30",
+    "duration": "2h 36m",
+    "fare": 1254,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD050",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Darbhanga",
+    "toCity": "Dibrugarh",
+    "provider": "ICE Demo",
+    "number": "TR1049",
+    "departure": "08:30",
+    "duration": "3h 43m",
+    "fare": 1427,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD051",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Delhi",
+    "toCity": "Hyderabad",
+    "provider": "Rajdhani Demo",
+    "number": "TR1050",
+    "departure": "11:30",
+    "duration": "4h 50m",
+    "fare": 1600,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD052",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mumbai",
+    "toCity": "Lucknow",
+    "provider": "TGV Demo",
+    "number": "TR1051",
+    "departure": "14:30",
+    "duration": "5h 57m",
+    "fare": 1773,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD053",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bengaluru",
+    "toCity": "Bhopal",
+    "provider": "Rajdhani Demo",
+    "number": "TR1052",
+    "departure": "17:30",
+    "duration": "6h 04m",
+    "fare": 1946,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD054",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Hyderabad",
+    "toCity": "Ranchi",
+    "provider": "TGV Demo",
+    "number": "TR1053",
+    "departure": "20:30",
+    "duration": "7h 11m",
+    "fare": 2119,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD055",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Chennai",
+    "toCity": "Raipur",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1054",
+    "departure": "23:30",
+    "duration": "8h 18m",
+    "fare": 2292,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD056",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kolkata",
+    "toCity": "Vadodara",
+    "provider": "Eurostar Demo",
+    "number": "TR1055",
+    "departure": "02:30",
+    "duration": "9h 25m",
+    "fare": 2465,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD057",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Goa",
+    "toCity": "Vijayawada",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1056",
+    "departure": "05:30",
+    "duration": "2h 32m",
+    "fare": 2638,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD058",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jaipur",
+    "toCity": "Bengaluru",
+    "provider": "Eurostar Demo",
+    "number": "TR1057",
+    "departure": "08:30",
+    "duration": "3h 39m",
+    "fare": 2811,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD059",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Ahmedabad",
+    "toCity": "Pune",
+    "provider": "Shinkansen Demo",
+    "number": "TR1058",
+    "departure": "11:30",
+    "duration": "4h 46m",
+    "fare": 2984,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD060",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Pune",
+    "toCity": "Varanasi",
+    "provider": "Intercity Demo",
+    "number": "TR1059",
+    "departure": "14:30",
+    "duration": "5h 53m",
+    "fare": 3157,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD061",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Lucknow",
+    "toCity": "Surat",
+    "provider": "Shinkansen Demo",
+    "number": "TR1060",
+    "departure": "17:30",
+    "duration": "6h 00m",
+    "fare": 3330,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD062",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Chandigarh",
+    "toCity": "Mangaluru",
+    "provider": "Intercity Demo",
+    "number": "TR1061",
+    "departure": "20:30",
+    "duration": "7h 07m",
+    "fare": 3503,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD063",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kochi",
+    "toCity": "Tirupati",
+    "provider": "ICE Demo",
+    "number": "TR1062",
+    "departure": "23:30",
+    "duration": "8h 14m",
+    "fare": 3676,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD064",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Guwahati",
+    "toCity": "Mysuru",
+    "provider": "Rajdhani Demo",
+    "number": "TR1063",
+    "departure": "02:30",
+    "duration": "9h 21m",
+    "fare": 3849,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD065",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Srinagar",
+    "toCity": "Mumbai",
+    "provider": "ICE Demo",
+    "number": "TR1064",
+    "departure": "05:30",
+    "duration": "2h 28m",
+    "fare": 4022,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD066",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Amritsar",
+    "toCity": "Ahmedabad",
+    "provider": "Rajdhani Demo",
+    "number": "TR1065",
+    "departure": "08:30",
+    "duration": "3h 35m",
+    "fare": 4195,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD067",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Varanasi",
+    "toCity": "Amritsar",
+    "provider": "TGV Demo",
+    "number": "TR1066",
+    "departure": "11:30",
+    "duration": "4h 42m",
+    "fare": 4368,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD068",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bhopal",
+    "toCity": "Nagpur",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1067",
+    "departure": "14:30",
+    "duration": "5h 49m",
+    "fare": 4541,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD069",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Indore",
+    "toCity": "Madurai",
+    "provider": "TGV Demo",
+    "number": "TR1068",
+    "departure": "17:30",
+    "duration": "6h 56m",
+    "fare": 4714,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD070",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Patna",
+    "toCity": "Port Blair",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1069",
+    "departure": "20:30",
+    "duration": "7h 03m",
+    "fare": 4887,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD071",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bhubaneswar",
+    "toCity": "Nashik",
+    "provider": "Eurostar Demo",
+    "number": "TR1070",
+    "departure": "23:30",
+    "duration": "8h 10m",
+    "fare": 5060,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD072",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Visakhapatnam",
+    "toCity": "Delhi",
+    "provider": "Shinkansen Demo",
+    "number": "TR1071",
+    "departure": "02:30",
+    "duration": "9h 17m",
+    "fare": 5233,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD073",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Nagpur",
+    "toCity": "Jaipur",
+    "provider": "Eurostar Demo",
+    "number": "TR1072",
+    "departure": "05:30",
+    "duration": "2h 24m",
+    "fare": 5406,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD074",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Surat",
+    "toCity": "Srinagar",
+    "provider": "Shinkansen Demo",
+    "number": "TR1073",
+    "departure": "08:30",
+    "duration": "3h 31m",
+    "fare": 5579,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD075",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Ranchi",
+    "toCity": "Visakhapatnam",
+    "provider": "Intercity Demo",
+    "number": "TR1074",
+    "departure": "11:30",
+    "duration": "4h 38m",
+    "fare": 5752,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD076",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Dehradun",
+    "toCity": "Coimbatore",
+    "provider": "ICE Demo",
+    "number": "TR1075",
+    "departure": "14:30",
+    "duration": "5h 45m",
+    "fare": 5925,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD077",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jodhpur",
+    "toCity": "Imphal",
+    "provider": "Intercity Demo",
+    "number": "TR1076",
+    "departure": "17:30",
+    "duration": "6h 52m",
+    "fare": 6098,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD078",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Udaipur",
+    "toCity": "Jabalpur",
+    "provider": "ICE Demo",
+    "number": "TR1077",
+    "departure": "20:30",
+    "duration": "7h 59m",
+    "fare": 6271,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD079",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Coimbatore",
+    "toCity": "Darbhanga",
+    "provider": "Rajdhani Demo",
+    "number": "TR1078",
+    "departure": "23:30",
+    "duration": "8h 06m",
+    "fare": 6444,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD080",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Madurai",
+    "toCity": "Goa",
+    "provider": "TGV Demo",
+    "number": "TR1079",
+    "departure": "02:30",
+    "duration": "9h 13m",
+    "fare": 6617,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD081",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mangaluru",
+    "toCity": "Guwahati",
+    "provider": "Rajdhani Demo",
+    "number": "TR1080",
+    "departure": "05:30",
+    "duration": "2h 20m",
+    "fare": 6790,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD082",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Raipur",
+    "toCity": "Bhubaneswar",
+    "provider": "TGV Demo",
+    "number": "TR1081",
+    "departure": "08:30",
+    "duration": "3h 27m",
+    "fare": 6963,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD083",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jammu",
+    "toCity": "Udaipur",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1082",
+    "departure": "11:30",
+    "duration": "4h 34m",
+    "fare": 7136,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD084",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Leh",
+    "toCity": "Agartala",
+    "provider": "Eurostar Demo",
+    "number": "TR1083",
+    "departure": "14:30",
+    "duration": "5h 41m",
+    "fare": 7309,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD085",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Agartala",
+    "toCity": "Gwalior",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1084",
+    "departure": "17:30",
+    "duration": "6h 48m",
+    "fare": 7482,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD086",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Imphal",
+    "toCity": "Bagdogra",
+    "provider": "Eurostar Demo",
+    "number": "TR1085",
+    "departure": "20:30",
+    "duration": "7h 55m",
+    "fare": 7655,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD087",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Port Blair",
+    "toCity": "Kolkata",
+    "provider": "Shinkansen Demo",
+    "number": "TR1086",
+    "departure": "23:30",
+    "duration": "8h 02m",
+    "fare": 7828,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD088",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Tirupati",
+    "toCity": "Kochi",
+    "provider": "Intercity Demo",
+    "number": "TR1087",
+    "departure": "02:30",
+    "duration": "9h 09m",
+    "fare": 501,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD089",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Vadodara",
+    "toCity": "Patna",
+    "provider": "Shinkansen Demo",
+    "number": "TR1088",
+    "departure": "05:30",
+    "duration": "2h 16m",
+    "fare": 674,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD090",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Rajkot",
+    "toCity": "Jodhpur",
+    "provider": "Intercity Demo",
+    "number": "TR1089",
+    "departure": "08:30",
+    "duration": "3h 23m",
+    "fare": 847,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD091",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kanpur",
+    "toCity": "Leh",
+    "provider": "ICE Demo",
+    "number": "TR1090",
+    "departure": "11:30",
+    "duration": "4h 30m",
+    "fare": 1020,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD092",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Gwalior",
+    "toCity": "Kanpur",
+    "provider": "Rajdhani Demo",
+    "number": "TR1091",
+    "departure": "14:30",
+    "duration": "5h 37m",
+    "fare": 1193,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD093",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jabalpur",
+    "toCity": "Silchar",
+    "provider": "ICE Demo",
+    "number": "TR1092",
+    "departure": "17:30",
+    "duration": "6h 44m",
+    "fare": 1366,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD094",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Nashik",
+    "toCity": "Chennai",
+    "provider": "Rajdhani Demo",
+    "number": "TR1093",
+    "departure": "20:30",
+    "duration": "7h 51m",
+    "fare": 1539,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD095",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mysuru",
+    "toCity": "Chandigarh",
+    "provider": "TGV Demo",
+    "number": "TR1094",
+    "departure": "23:30",
+    "duration": "8h 58m",
+    "fare": 1712,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD096",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Vijayawada",
+    "toCity": "Indore",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1095",
+    "departure": "02:30",
+    "duration": "9h 05m",
+    "fare": 1885,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD097",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Dibrugarh",
+    "toCity": "Dehradun",
+    "provider": "TGV Demo",
+    "number": "TR1096",
+    "departure": "05:30",
+    "duration": "2h 12m",
+    "fare": 2058,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD098",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Silchar",
+    "toCity": "Jammu",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1097",
+    "departure": "08:30",
+    "duration": "3h 19m",
+    "fare": 2231,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD099",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bagdogra",
+    "toCity": "Rajkot",
+    "provider": "Eurostar Demo",
+    "number": "TR1098",
+    "departure": "11:30",
+    "duration": "4h 26m",
+    "fare": 2404,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD100",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Darbhanga",
+    "toCity": "Dibrugarh",
+    "provider": "Shinkansen Demo",
+    "number": "TR1099",
+    "departure": "14:30",
+    "duration": "5h 33m",
+    "fare": 2577,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD101",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Delhi",
+    "toCity": "Hyderabad",
+    "provider": "Eurostar Demo",
+    "number": "TR1100",
+    "departure": "17:30",
+    "duration": "6h 40m",
+    "fare": 2750,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD102",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Mumbai",
+    "toCity": "Lucknow",
+    "provider": "Shinkansen Demo",
+    "number": "TR1101",
+    "departure": "20:30",
+    "duration": "7h 47m",
+    "fare": 2923,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD103",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Bengaluru",
+    "toCity": "Bhopal",
+    "provider": "Intercity Demo",
+    "number": "TR1102",
+    "departure": "23:30",
+    "duration": "8h 54m",
+    "fare": 3096,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD104",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Hyderabad",
+    "toCity": "Ranchi",
+    "provider": "ICE Demo",
+    "number": "TR1103",
+    "departure": "02:30",
+    "duration": "9h 01m",
+    "fare": 3269,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD105",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Chennai",
+    "toCity": "Raipur",
+    "provider": "Intercity Demo",
+    "number": "TR1104",
+    "departure": "05:30",
+    "duration": "2h 08m",
+    "fare": 3442,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD106",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Kolkata",
+    "toCity": "Vadodara",
+    "provider": "ICE Demo",
+    "number": "TR1105",
+    "departure": "08:30",
+    "duration": "3h 15m",
+    "fare": 3615,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD107",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Goa",
+    "toCity": "Vijayawada",
+    "provider": "Rajdhani Demo",
+    "number": "TR1106",
+    "departure": "11:30",
+    "duration": "4h 22m",
+    "fare": 3788,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD108",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Jaipur",
+    "toCity": "Bengaluru",
+    "provider": "TGV Demo",
+    "number": "TR1107",
+    "departure": "14:30",
+    "duration": "5h 29m",
+    "fare": 3961,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD109",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Ahmedabad",
+    "toCity": "Pune",
+    "provider": "Rajdhani Demo",
+    "number": "TR1108",
+    "departure": "17:30",
+    "duration": "6h 36m",
+    "fare": 4134,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TD110",
+    "kind": "train",
+    "international": false,
+    "fromCity": "Pune",
+    "toCity": "Varanasi",
+    "provider": "TGV Demo",
+    "number": "TR1109",
+    "departure": "20:30",
+    "duration": "7h 43m",
+    "fare": 4307,
+    "classes": [
+      "Sleeper",
+      "3AC",
+      "2AC",
+      "1AC"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI001",
+    "kind": "train",
+    "international": true,
+    "fromCity": "London",
+    "toCity": "Singapore",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1000",
+    "departure": "05:30",
+    "duration": "2h 00m",
+    "fare": 450,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI002",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Paris",
+    "toCity": "Frankfurt",
+    "provider": "Eurostar Demo",
+    "number": "TR1001",
+    "departure": "08:30",
+    "duration": "3h 07m",
+    "fare": 623,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI003",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Dubai",
+    "toCity": "Munich",
+    "provider": "Shinkansen Demo",
+    "number": "TR1002",
+    "departure": "11:30",
+    "duration": "4h 14m",
+    "fare": 796,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI004",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Singapore",
+    "toCity": "Stockholm",
+    "provider": "Intercity Demo",
+    "number": "TR1003",
+    "departure": "14:30",
+    "duration": "5h 21m",
+    "fare": 969,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI005",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Tokyo",
+    "toCity": "Jeddah",
+    "provider": "Shinkansen Demo",
+    "number": "TR1004",
+    "departure": "17:30",
+    "duration": "6h 28m",
+    "fare": 1142,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI006",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Bangkok",
+    "toCity": "Beijing",
+    "provider": "Intercity Demo",
+    "number": "TR1005",
+    "departure": "20:30",
+    "duration": "7h 35m",
+    "fare": 1315,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI007",
+    "kind": "train",
+    "international": true,
+    "fromCity": "New York",
+    "toCity": "Colombo",
+    "provider": "ICE Demo",
+    "number": "TR1006",
+    "departure": "23:30",
+    "duration": "8h 42m",
+    "fare": 1488,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI008",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Toronto",
+    "toCity": "Chicago",
+    "provider": "Rajdhani Demo",
+    "number": "TR1007",
+    "departure": "02:30",
+    "duration": "9h 49m",
+    "fare": 1661,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI009",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Sydney",
+    "toCity": "Geneva",
+    "provider": "ICE Demo",
+    "number": "TR1008",
+    "departure": "05:30",
+    "duration": "2h 56m",
+    "fare": 1834,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI010",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Melbourne",
+    "toCity": "New York",
+    "provider": "Rajdhani Demo",
+    "number": "TR1009",
+    "departure": "08:30",
+    "duration": "3h 03m",
+    "fare": 2007,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI011",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Frankfurt",
+    "toCity": "Amsterdam",
+    "provider": "TGV Demo",
+    "number": "TR1010",
+    "departure": "11:30",
+    "duration": "4h 10m",
+    "fare": 2180,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI012",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Rome",
+    "toCity": "Budapest",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1011",
+    "departure": "14:30",
+    "duration": "5h 17m",
+    "fare": 2353,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI013",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Zurich",
+    "toCity": "Istanbul",
+    "provider": "TGV Demo",
+    "number": "TR1012",
+    "departure": "17:30",
+    "duration": "6h 24m",
+    "fare": 2526,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI014",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Amsterdam",
+    "toCity": "Hong Kong",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1013",
+    "departure": "20:30",
+    "duration": "7h 31m",
+    "fare": 2699,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI015",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Madrid",
+    "toCity": "Hanoi",
+    "provider": "Eurostar Demo",
+    "number": "TR1014",
+    "departure": "23:30",
+    "duration": "8h 38m",
+    "fare": 2872,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI016",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Barcelona",
+    "toCity": "Male",
+    "provider": "Shinkansen Demo",
+    "number": "TR1015",
+    "departure": "02:30",
+    "duration": "9h 45m",
+    "fare": 3045,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI017",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Berlin",
+    "toCity": "Nairobi",
+    "provider": "Eurostar Demo",
+    "number": "TR1016",
+    "departure": "05:30",
+    "duration": "2h 52m",
+    "fare": 3218,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI018",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Munich",
+    "toCity": "Dubai",
+    "provider": "Shinkansen Demo",
+    "number": "TR1017",
+    "departure": "08:30",
+    "duration": "3h 59m",
+    "fare": 3391,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI019",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Vienna",
+    "toCity": "Melbourne",
+    "provider": "Intercity Demo",
+    "number": "TR1018",
+    "departure": "11:30",
+    "duration": "4h 06m",
+    "fare": 3564,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI020",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Prague",
+    "toCity": "Berlin",
+    "provider": "ICE Demo",
+    "number": "TR1019",
+    "departure": "14:30",
+    "duration": "5h 13m",
+    "fare": 3737,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI021",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Budapest",
+    "toCity": "Copenhagen",
+    "provider": "Intercity Demo",
+    "number": "TR1020",
+    "departure": "17:30",
+    "duration": "6h 20m",
+    "fare": 3910,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI022",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Warsaw",
+    "toCity": "Riyadh",
+    "provider": "ICE Demo",
+    "number": "TR1021",
+    "departure": "20:30",
+    "duration": "7h 27m",
+    "fare": 4083,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI023",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Brussels",
+    "toCity": "Kyoto",
+    "provider": "Rajdhani Demo",
+    "number": "TR1022",
+    "departure": "23:30",
+    "duration": "8h 34m",
+    "fare": 4256,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI024",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Copenhagen",
+    "toCity": "Phuket",
+    "provider": "TGV Demo",
+    "number": "TR1023",
+    "departure": "02:30",
+    "duration": "9h 41m",
+    "fare": 4429,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI025",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Stockholm",
+    "toCity": "San Francisco",
+    "provider": "Rajdhani Demo",
+    "number": "TR1024",
+    "departure": "05:30",
+    "duration": "2h 48m",
+    "fare": 4602,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI026",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Oslo",
+    "toCity": "Lisbon",
+    "provider": "TGV Demo",
+    "number": "TR1025",
+    "departure": "08:30",
+    "duration": "3h 55m",
+    "fare": 4775,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI027",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Helsinki",
+    "toCity": "Bangkok",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1026",
+    "departure": "11:30",
+    "duration": "4h 02m",
+    "fare": 4948,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI028",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Istanbul",
+    "toCity": "Zurich",
+    "provider": "Eurostar Demo",
+    "number": "TR1027",
+    "departure": "14:30",
+    "duration": "5h 09m",
+    "fare": 5121,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI029",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Doha",
+    "toCity": "Prague",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1028",
+    "departure": "17:30",
+    "duration": "6h 16m",
+    "fare": 5294,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI030",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Abu Dhabi",
+    "toCity": "Helsinki",
+    "provider": "Eurostar Demo",
+    "number": "TR1029",
+    "departure": "20:30",
+    "duration": "7h 23m",
+    "fare": 5467,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI031",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Riyadh",
+    "toCity": "Kuala Lumpur",
+    "provider": "Shinkansen Demo",
+    "number": "TR1030",
+    "departure": "23:30",
+    "duration": "8h 30m",
+    "fare": 5640,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI032",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Jeddah",
+    "toCity": "Taipei",
+    "provider": "Intercity Demo",
+    "number": "TR1031",
+    "departure": "02:30",
+    "duration": "9h 37m",
+    "fare": 5813,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI033",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Muscat",
+    "toCity": "Dhaka",
+    "provider": "Shinkansen Demo",
+    "number": "TR1032",
+    "departure": "05:30",
+    "duration": "2h 44m",
+    "fare": 5986,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI034",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Kuala Lumpur",
+    "toCity": "Cape Town",
+    "provider": "Intercity Demo",
+    "number": "TR1033",
+    "departure": "08:30",
+    "duration": "3h 51m",
+    "fare": 6159,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI035",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Hong Kong",
+    "toCity": "Paris",
+    "provider": "ICE Demo",
+    "number": "TR1034",
+    "departure": "11:30",
+    "duration": "4h 58m",
+    "fare": 6332,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI036",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Seoul",
+    "toCity": "Sydney",
+    "provider": "Rajdhani Demo",
+    "number": "TR1035",
+    "departure": "14:30",
+    "duration": "5h 05m",
+    "fare": 6505,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI037",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Osaka",
+    "toCity": "Barcelona",
+    "provider": "ICE Demo",
+    "number": "TR1036",
+    "departure": "17:30",
+    "duration": "6h 12m",
+    "fare": 6678,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI038",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Kyoto",
+    "toCity": "Brussels",
+    "provider": "Rajdhani Demo",
+    "number": "TR1037",
+    "departure": "20:30",
+    "duration": "7h 19m",
+    "fare": 6851,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI039",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Beijing",
+    "toCity": "Abu Dhabi",
+    "provider": "TGV Demo",
+    "number": "TR1038",
+    "departure": "23:30",
+    "duration": "8h 26m",
+    "fare": 7024,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI040",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Shanghai",
+    "toCity": "Osaka",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1039",
+    "departure": "02:30",
+    "duration": "9h 33m",
+    "fare": 7197,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI041",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Taipei",
+    "toCity": "Bali",
+    "provider": "TGV Demo",
+    "number": "TR1040",
+    "departure": "05:30",
+    "duration": "2h 40m",
+    "fare": 7370,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI042",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Hanoi",
+    "toCity": "Los Angeles",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1041",
+    "departure": "08:30",
+    "duration": "3h 47m",
+    "fare": 7543,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI043",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Ho Chi Minh City",
+    "toCity": "Athens",
+    "provider": "Eurostar Demo",
+    "number": "TR1042",
+    "departure": "11:30",
+    "duration": "4h 54m",
+    "fare": 7716,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI044",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Bali",
+    "toCity": "Tokyo",
+    "provider": "Shinkansen Demo",
+    "number": "TR1043",
+    "departure": "14:30",
+    "duration": "5h 01m",
+    "fare": 7889,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI045",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Phuket",
+    "toCity": "Rome",
+    "provider": "Eurostar Demo",
+    "number": "TR1044",
+    "departure": "17:30",
+    "duration": "6h 08m",
+    "fare": 8062,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI046",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Colombo",
+    "toCity": "Vienna",
+    "provider": "Shinkansen Demo",
+    "number": "TR1045",
+    "departure": "20:30",
+    "duration": "7h 15m",
+    "fare": 8235,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI047",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Kathmandu",
+    "toCity": "Oslo",
+    "provider": "Intercity Demo",
+    "number": "TR1046",
+    "departure": "23:30",
+    "duration": "8h 22m",
+    "fare": 8408,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI048",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Dhaka",
+    "toCity": "Muscat",
+    "provider": "ICE Demo",
+    "number": "TR1047",
+    "departure": "02:30",
+    "duration": "9h 29m",
+    "fare": 8581,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI049",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Male",
+    "toCity": "Shanghai",
+    "provider": "Intercity Demo",
+    "number": "TR1048",
+    "departure": "05:30",
+    "duration": "2h 36m",
+    "fare": 8754,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI050",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Auckland",
+    "toCity": "Kathmandu",
+    "provider": "ICE Demo",
+    "number": "TR1049",
+    "departure": "08:30",
+    "duration": "3h 43m",
+    "fare": 8927,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI051",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Los Angeles",
+    "toCity": "Vancouver",
+    "provider": "Rajdhani Demo",
+    "number": "TR1050",
+    "departure": "11:30",
+    "duration": "4h 50m",
+    "fare": 9100,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI052",
+    "kind": "train",
+    "international": true,
+    "fromCity": "San Francisco",
+    "toCity": "London",
+    "provider": "TGV Demo",
+    "number": "TR1051",
+    "departure": "14:30",
+    "duration": "5h 57m",
+    "fare": 9273,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI053",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Chicago",
+    "toCity": "Toronto",
+    "provider": "Rajdhani Demo",
+    "number": "TR1052",
+    "departure": "17:30",
+    "duration": "6h 04m",
+    "fare": 9446,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI054",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Vancouver",
+    "toCity": "Madrid",
+    "provider": "TGV Demo",
+    "number": "TR1053",
+    "departure": "20:30",
+    "duration": "7h 11m",
+    "fare": 9619,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI055",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Cape Town",
+    "toCity": "Warsaw",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1054",
+    "departure": "23:30",
+    "duration": "8h 18m",
+    "fare": 9792,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI056",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Nairobi",
+    "toCity": "Doha",
+    "provider": "Eurostar Demo",
+    "number": "TR1055",
+    "departure": "02:30",
+    "duration": "9h 25m",
+    "fare": 9965,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI057",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Cairo",
+    "toCity": "Seoul",
+    "provider": "Vande Bharat Demo",
+    "number": "TR1056",
+    "departure": "05:30",
+    "duration": "2h 32m",
+    "fare": 10138,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI058",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Athens",
+    "toCity": "Ho Chi Minh City",
+    "provider": "Eurostar Demo",
+    "number": "TR1057",
+    "departure": "08:30",
+    "duration": "3h 39m",
+    "fare": 10311,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI059",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Lisbon",
+    "toCity": "Auckland",
+    "provider": "Shinkansen Demo",
+    "number": "TR1058",
+    "departure": "11:30",
+    "duration": "4h 46m",
+    "fare": 10484,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  },
+  {
+    "id": "TI060",
+    "kind": "train",
+    "international": true,
+    "fromCity": "Geneva",
+    "toCity": "Cairo",
+    "provider": "Intercity Demo",
+    "number": "TR1059",
+    "departure": "14:30",
+    "duration": "5h 53m",
+    "fare": 10657,
+    "classes": [
+      "Standard",
+      "First Class"
+    ],
+    "currency": "INR"
+  }
+]

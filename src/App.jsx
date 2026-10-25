@@ -1,9 +1,13 @@
+
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
@@ -17,9 +21,12 @@ import Hotels from "./pages/Hotels";
 import HotelDetails from "./pages/HotelDetails";
 
 import Booking from "./pages/Booking";
-import Wishlist from "./pages/Wishlist";
+import MyBookings from "./pages/MyBookings.jsx";
 
+import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
+import Travel from "./pages/Travel";
+import TravelBookings from "./pages/TravelBookings";
 
 function App() {
   return (
@@ -27,26 +34,16 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Home />} />
 
-        {/* HOME */}
-        <Route
-          path="/"
-          element={<Home />}
-        />
+        <Route path="/login" element={<Login />} />
 
-        {/* ABOUT */}
-        <Route
-          path="/about"
-          element={<About />}
-        />
+        <Route path="/signup" element={<Signup />} />
 
-        {/* CONTACT */}
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
+        <Route path="/about" element={<About />} />
 
-        {/* DESTINATIONS */}
+        <Route path="/contact" element={<Contact />} />
+
         <Route
           path="/destinations"
           element={<Destinations />}
@@ -57,46 +54,37 @@ function App() {
           element={<DestinationDetails />}
         />
 
-        {/* PACKAGES */}
-        <Route
-          path="/packages"
-          element={<Packages />}
-        />
+        <Route path="/packages" element={<Packages />} />
 
         <Route
           path="/packages/:id"
           element={<PackageDetails />}
         />
 
-        {/* HOTELS */}
-        <Route
-          path="/hotels"
-          element={<Hotels />}
-        />
+        <Route path="/hotels" element={<Hotels />} />
 
         <Route
           path="/hotels/:id"
           element={<HotelDetails />}
         />
 
-        {/* BOOKING */}
+        {/* New booking form */}
+        <Route path="/booking" element={<Booking />} />
+
+        {/* Existing bookings */}
         <Route
-          path="/booking"
-          element={<Booking />}
+          path="/my-bookings"
+          element={<MyBookings />}
         />
 
-        {/* WISHLIST */}
         <Route
           path="/wishlist"
           element={<Wishlist />}
         />
 
-        {/* 404 */}
-        <Route
-          path="*"
-          element={<NotFound />}
-        />
-
+        <Route path="/travel/:kind" element={<Travel />} />
+        <Route path="/my-travel-bookings" element={<TravelBookings />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

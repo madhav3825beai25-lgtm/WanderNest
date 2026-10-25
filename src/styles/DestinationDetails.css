@@ -605,3 +605,48 @@
     width: 100%;
   }
 }
+
+
+.destination-hotel-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.destination-hotel-actions .hotel-button {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #079bd3;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.destination-hotel-actions .destination-view-hotel {
+  background: #eef4ff;
+  color: #2456df;
+  border: 1px solid #c8d9ff;
+}
+
+.destination-hotel-actions .destination-view-hotel:hover {
+  background: #dce8ff;
+}
+
+.destination-hotel-actions .hotel-button:not(.destination-view-hotel):hover {
+  background: #0588bb;
+}
+
+@media (max-width: 480px) {
+  .destination-hotel-actions {
+    flex-direction: column;
+  }
+}

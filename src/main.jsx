@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { WishlistProvider } from "./pages/WishlistContext";
 
 import "./index.css";
+import "./styles/PremiumTheme.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

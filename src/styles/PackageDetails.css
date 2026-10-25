@@ -1,327 +1,563 @@
+/* =========================================
+   WANDERNEST - PACKAGE DETAILS PAGE
+========================================= */
+
 .package-details-page {
+  width: 100%;
   min-height: 100vh;
   background: #f5f7fb;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
+  color: #111827;
+  overflow-x: clip;
 }
 
-/* Hero */
+.package-details-page *,
+.package-details-page *::before,
+.package-details-page *::after {
+  box-sizing: border-box;
+}
 
-.package-hero {
+/* =========================================
+   HERO BANNER
+========================================= */
+
+.package-details-page .package-hero {
   position: relative;
-  height: 450px;
+  width: 100%;
+  height: 440px;
+  min-height: 440px;
   overflow: hidden;
+  background: #0f172a;
 }
 
-.package-hero img {
+.package-details-page .package-hero-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-.package-hero::after {
+.package-details-page .package-hero::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.05)
+    90deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.35) 55%,
+    rgba(0, 0, 0, 0.1) 100%
   );
+  pointer-events: none;
 }
 
-.package-hero-overlay {
+.package-details-page .package-hero-overlay {
   position: absolute;
   z-index: 2;
-  bottom: 45px;
-  left: 8%;
-  color: white;
+  left: max(5%, calc((100% - 1250px) / 2));
+  bottom: 65px;
+  width: min(90%, 850px);
+  color: #ffffff;
 }
 
-.package-hero-overlay span {
-  font-size: 14px;
+.package-details-page .package-hero-label {
+  display: inline-block;
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.package-hero-overlay h1 {
-  margin: 10px 0;
-  font-size: 46px;
+.package-details-page .package-hero-overlay h1 {
+  margin: 18px 0 12px;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 54px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
 }
 
-.package-hero-overlay p {
+.package-details-page .package-hero-overlay p {
+  margin: 0 0 12px;
+  color: #f1f5f9;
   font-size: 18px;
 }
 
-/* Main layout */
+.package-hero-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
 
-.package-details-container {
-  max-width: 1250px;
-  margin: 45px auto;
-  padding: 0 25px;
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.package-details-page .package-details-container {
   display: grid;
-  grid-template-columns: 1fr 350px;
-  gap: 35px;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  align-items: start;
+  gap: 30px;
+  width: min(1250px, calc(100% - 40px));
+  max-width: 1250px;
+  margin: 45px auto 0;
+  padding: 0;
 }
 
-.package-main {
-  background: white;
+.package-details-page .package-main {
+  min-width: 0;
   padding: 35px;
+  border: 1px solid #edf0f5;
   border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
 }
 
-.package-main h2 {
-  margin-top: 0;
+.package-details-page .package-main h2 {
+  margin: 0 0 18px;
   color: #111827;
-  font-size: 27px;
+  font-size: 25px;
+  font-weight: 750;
+  line-height: 1.3;
 }
 
 .package-long-description {
+  margin: 0;
   color: #64748b;
-  line-height: 1.8;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.9;
 }
 
-/* Detail boxes */
+/* =========================================
+   QUICK DETAIL CARDS
+========================================= */
 
-.details-cards {
+.package-details-page .details-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin: 30px 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 32px 0;
 }
 
-.detail-box {
-  padding: 20px 15px;
+.package-details-page .detail-box {
+  min-width: 0;
+  padding: 22px 12px;
+  border: 1px solid #e9f0f7;
+  border-radius: 13px;
   background: #f8fafc;
-  border-radius: 12px;
   text-align: center;
 }
 
-.detail-box span {
-  font-size: 28px;
+.package-details-page .detail-box > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 27px;
 }
 
-.detail-box h3 {
-  margin: 8px 0 5px;
-  font-size: 15px;
+.package-details-page .detail-box h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.detail-box p {
+.package-details-page .detail-box p {
   margin: 0;
   color: #64748b;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-/* Sections */
+/* =========================================
+   CONTENT SECTIONS
+========================================= */
 
-.package-section {
-  margin-top: 38px;
+.package-details-page .package-section {
+  margin-top: 36px;
   padding-top: 30px;
   border-top: 1px solid #e5e7eb;
 }
 
-.package-section h2 {
-  margin-bottom: 22px;
+.package-details-page .package-section h2 {
+  margin: 0 0 22px;
+  font-size: 23px;
 }
 
-/* Places */
+/* =========================================
+   PLACES TO VISIT
+========================================= */
 
-.places-list {
+.package-details-page .places-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.package-details-page .place-item {
+  display: flex;
+  align-items: center;
   gap: 12px;
-}
-
-.place-item {
-  padding: 13px 15px;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #e8f0f7;
+  border-radius: 10px;
   background: #f8fafc;
-  border-radius: 8px;
   color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.place-item span {
-  color: #159bd7;
-  font-weight: bold;
-  margin-right: 8px;
+.package-details-page .place-item span {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-weight: 800;
 }
 
-/* Hotels */
+/* =========================================
+   HOTELS
+========================================= */
 
-.hotels-list {
+.package-details-page .hotels-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.hotel-item {
+.package-details-page .hotel-item {
   display: flex;
-  gap: 15px;
-  padding: 18px;
-  background: #f8fafc;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e8f0f7;
   border-radius: 12px;
-}
-
-.hotel-icon {
-  font-size: 30px;
-}
-
-.hotel-item h3 {
-  margin: 0 0 5px;
-}
-
-.hotel-item p {
-  margin: 0 0 7px;
-  color: #64748b;
-}
-
-.hotel-item small {
-  display: block;
-  color: #64748b;
-  margin-top: 3px;
-}
-
-/* Includes */
-
-.includes-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.includes-list div {
-  padding: 13px;
   background: #f8fafc;
-  border-radius: 8px;
+}
+
+.package-details-page .hotel-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  font-size: 25px;
+}
+
+.package-details-page .hotel-item h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.package-details-page .hotel-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.package-hotel-notice {
+  padding: 20px;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  background: #f0f9ff;
+  color: #0369a1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   INCLUSIONS
+========================================= */
+
+.package-details-page .includes-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.package-details-page .includes-list > div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 15px;
+  border: 1px solid #e8f0f7;
+  border-radius: 10px;
+  background: #f8fafc;
   color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-/* Sidebar */
+.package-details-page .includes-list span {
+  color: #0284c7;
+  font-weight: 800;
+}
 
-.package-sidebar {
+/* =========================================
+   PRICE SIDEBAR
+========================================= */
+
+.package-details-page .package-sidebar {
   position: relative;
+  min-width: 0;
 }
 
-.price-card {
+.package-details-page .price-card {
   position: sticky;
-  top: 25px;
-  background: white;
+  top: 95px;
+  width: 100%;
   padding: 30px;
+  border: 1px solid #edf0f5;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.09);
 }
 
-.price-card > span {
+.package-details-page .price-label {
+  display: block;
+  margin-bottom: 8px;
   color: #64748b;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.price-card h2 {
-  color: #0b8dcc;
-  font-size: 32px;
+.package-details-page .price-card h2 {
+  margin: 0;
+  color: #0284c7;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.package-details-page .price-person {
   margin: 8px 0 0;
-}
-
-.price-card > p {
   color: #64748b;
+  font-size: 13px;
 }
 
-.price-line {
+.package-details-page .price-line {
+  width: 100%;
   height: 1px;
+  margin: 23px 0;
   background: #e5e7eb;
-  margin: 20px 0;
 }
 
-.book-package-button {
-  display: block;
-  text-align: center;
-  margin-top: 25px;
-  padding: 14px;
-  background: #159bd7;
-  color: white;
-  text-decoration: none;
-  border-radius: 9px;
-  font-weight: 600;
-  transition: 0.3s;
+.package-details-page .price-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.book-package-button:hover {
-  background: #0d82b8;
-}
-
-.back-packages {
-  display: block;
-  text-align: center;
-  margin-top: 17px;
-  color: #64748b;
-  text-decoration: none;
+.package-details-page .price-features p {
+  margin: 0;
+  color: #475569;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.back-packages:hover {
-  color: #159bd7;
+/* =========================================
+   BOOKING BUTTON
+========================================= */
+
+.package-details-page .book-package-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 28px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* Not found */
+.package-details-page .book-package-button:hover {
+  transform: translateY(-2px);
+  background: #0369a1;
+  color: #ffffff;
+}
+
+.package-booking-note {
+  margin: 16px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.package-details-page .back-packages {
+  display: block;
+  margin-top: 18px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.package-details-page .back-packages:hover {
+  color: #0284c7;
+}
+
+/* =========================================
+   PACKAGE NOT FOUND
+========================================= */
 
 .package-not-found {
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 15px;
+  min-height: 70vh;
+  padding: 30px;
+  background: #f5f7fb;
+  text-align: center;
+}
+
+.package-not-found h1 {
+  margin: 0;
+  color: #111827;
+}
+
+.package-not-found p {
+  margin: 0;
+  color: #64748b;
 }
 
 .package-not-found a {
-  color: #159bd7;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
 }
 
-/* Tablet */
+/* =========================================
+   TABLET
+========================================= */
 
-@media (max-width: 950px) {
-  .package-details-container {
-    grid-template-columns: 1fr;
+@media (max-width: 1000px) {
+  .package-details-page .package-details-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
   }
 
-  .package-sidebar {
+  .package-details-page .package-sidebar {
     order: -1;
   }
 
-  .price-card {
+  .package-details-page .price-card {
     position: static;
   }
 
-  .details-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .package-details-page .details-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Mobile */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 600px) {
-  .package-hero {
-    height: 350px;
+  .package-details-page {
+    padding-bottom: 45px;
   }
 
-  .package-hero-overlay {
-    left: 25px;
+  .package-details-page .package-hero {
+    height: 330px;
+    min-height: 330px;
+  }
+
+  .package-details-page .package-hero-overlay {
+    left: 20px;
     bottom: 30px;
+    width: calc(100% - 40px);
   }
 
-  .package-hero-overlay h1 {
-    font-size: 32px;
+  .package-details-page .package-hero-overlay h1 {
+    margin: 14px 0 10px;
+    font-size: 31px;
   }
 
-  .package-main {
-    padding: 22px;
+  .package-details-page .package-hero-overlay p {
+    font-size: 15px;
   }
 
-  .details-cards {
-    grid-template-columns: 1fr 1fr;
+  .package-details-page .package-details-container {
+    width: calc(100% - 28px);
+    margin-top: 20px;
   }
 
-  .places-list,
-  .includes-list {
-    grid-template-columns: 1fr;
+  .package-details-page .package-main {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+
+  .package-details-page .package-main h2 {
+    font-size: 21px;
+  }
+
+  .package-details-page .details-cards {
+    gap: 10px;
+  }
+
+  .package-details-page .detail-box {
+    padding: 18px 10px;
+  }
+
+  .package-details-page .places-list,
+  .package-details-page .includes-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .package-details-page .hotel-item {
+    padding: 15px;
+  }
+
+  .package-details-page .price-card {
+    padding: 24px 20px;
+  }
+
+  .package-details-page .price-card h2 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 380px) {
+  .package-details-page .details-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .package-details-page .package-hero-overlay h1 {
+    font-size: 27px;
   }
 }
