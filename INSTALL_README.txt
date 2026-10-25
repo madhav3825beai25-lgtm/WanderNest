@@ -1,13 +1,9 @@
-WanderNest Premium + Round Trip Patch
+WanderNest simulated flight search patch
 
-Backup C:\Wandernest and C:\Wandernest\backend before replacing.
-Copy the src and backend folders from ZIP into C:\Wandernest (merge and replace).
-Frontend: cd C:\Wandernest ; npm run dev
-Backend: cd C:\Wandernest\backend ; node server.js
+Copy the backend/ and src/ folders into C:\Wandernest and allow overwrite of matching files.
+Run backend: cd C:\Wandernest\backend && npm start (or node server.js)
+Run frontend: cd C:\Wandernest && npm run dev
 
-NEW FILES: src/styles/PremiumTheme.css, src/styles/RoundTrip.css
-REPLACE: src/main.jsx, src/pages/Travel.jsx, src/pages/TravelBookings.jsx, backend/models/TravelBooking.js, backend/routes/travel.js, backend/routes/travelPdf.js
+Adds 50-city domestic flight city-pair searches, sample international hub connections, and native city suggestions. Train inventory remains unchanged; no invented train routes. All fares/timings are simulated and NOT live. No real ticket is issued. Existing booking/payment/refund endpoints are retained.
 
-Round trip: only flight routes with matching reverse city pairs in sample inventory. Server calculates both fares using class factors and passenger count. One Razorpay test order/payment covers both legs. PDF includes both legs. Cancellation is BOTH legs only, and policy uses ONWARD departure date (earliest leg), with one refund on the total payment. Partial leg cancellation is not supported.
-
-IMPORTANT: Demo inventory/tickets are NOT real travel bookings. Do not use live Razorpay keys. Existing backend refund processing should be tested with a small Test Mode transaction before reliance. No live end-to-end payment tests performed here.
+NOTE: For any live airline integration, an authorized provider account and separate booking/payment integration are needed.
