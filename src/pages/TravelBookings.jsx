@@ -82,7 +82,95 @@ export default function TravelBookings() {
       setTimeout(() => URL.revokeObjectURL(url), 2000);
     } catch (error) { setMessage(error.message); }
   }
-  return <main className="travel-shell"><section className="travel-hero"><div className="travel-container"><div className="travel-hero-top"><span className="travel-kicker">YOUR JOURNEYS, ALL IN ONE PLACE</span><Link className="travel-hero-link" to="/flights">Explore flights ↗</Link></div><h1>My travel bookings</h1><p>Manage flight, train and cab reservations, documents, cancellations and refunds.</p></div></section><div className="travel-container travel-content"><section className="travel-search-card"><div className="travel-section-head" style={{ marginBottom: 0 }}><div><span className="travel-eyebrow">BOOKING OVERVIEW</span><h2 style={{ marginBottom: 4 }}>{loading ? 'Loading bookings...' : `${list.length} travel booking${list.length === 1 ? '' : 's'}`}</h2><p>PDF invoices and travel documents are available on each booking.</p></div><button className="travel-outline" onClick={load}>Refresh bookings ↻</button></div></section>{message && <div className="travel-alert" role="alert">{message}</div>}<section className="travel-listing">{!loading && !list.length && <div className="travel-empty-bookings"><span style={{ fontSize: 44 }}>🧳</span><strong>{message ? 'Bookings could not be loaded' : 'Your next adventure starts here'}</strong><p>{message ? 'Please log in and refresh the page.' : 'Your flight, train and cab bookings will appear here.'}</p><Link to="/flights">Explore journeys →</Link></div>}<div className="travel-bookings-grid">{list.map((booking) => <article className="travel-booking" key={booking._id}><div className="travel-booking-header"><span className="travel-booking-type">{booking.kind === 'flight' ? '✈ FLIGHT' : booking.kind === 'train' ? '🚆 TRAIN' : '🚕 CAB'} · {booking.reference}</span><span className={`travel-booking-status ${booking.status}`}>{booking.status}</span></div><h2>{booking.fromCity} → {booking.toCity}{booking.tripType==='roundtrip'?' → '+booking.fromCity:''}</h2>{booking.tripType==='roundtrip' && <div className="wn-leg-info"><strong>⇄ Round Trip · Both journeys in one booking</strong><span>✈ Onward: {booking.provider} · {new Date(booking.travelDate).toLocaleDateString('en-IN')} · {booking.travelTime} · {booking.travelClass}</span><span>✈ Return: {booking.returnProvider} · {new Date(booking.returnDate).toLocaleDateString('en-IN')} · {booking.returnTravelTime} · {booking.returnTravelClass}</span><small>Cancellation applies to both legs together; refunds follow the earliest departure date.</small></div>}<div className="travel-booking-meta"><span>📅 {new Date(booking.travelDate).toLocaleString('en-IN')}</span><span>🏷 {booking.provider}</span><span>Payment: {booking.paymentStatus}</span></div><div className="travel-booking-amount">{money(booking.amountPaise)}</div>{booking.status === 'cancelled' && <div className="travel-booking-refund">Refund: <strong>{booking.refundStatus}</strong> · {money(booking.refundAmountPaise)} · {booking.refundPercentage || 0}% {booking.razorpayRefundId ? `· ${booking.razorpayRefundId}` : ''}</div>}<div className="travel-actions"><button onClick={() => pdf(booking, 'invoice')}>↓ Invoice PDF</button>{booking.status === 'confirmed' && <button onClick={() => pdf(booking, 'ticket')}>↓ Demo ticket PDF</button>}{booking.status === 'cancelled' && <button onClick={() => pdf(booking, 'cancellation')}>↓ Cancellation receipt</button>}{booking.status === 'pending' && booking.paymentStatus !== 'paid' && <button disabled={!!busy} onClick={() => action(booking, 'pay')}>Pay now</button>}{booking.status !== 'cancelled' && <button className="danger" disabled={!!busy} onClick={() => action(booking, 'cancel')}>Cancel booking</button>}{booking.razorpayRefundId && booking.refundStatus !== 'processed' && <button disabled={!!busy} onClick={() => action(booking, 'refund')}>Check refund status</button>}</div></article>)}</div></section><div className="travel-footer-link"><Link to="/flights">Explore more journeys →</Link></div></div>
+  return <main className="travel-shell"><section className="travel-hero"><div className="travel-container"><div className="travel-hero-top"><span className="travel-kicker">YOUR JOURNEYS, ALL IN ONE PLACE</span><Link className="travel-hero-link" to="/flights">Explore flights ↗</Link></div><h1>My travel bookings</h1><p>Manage flight, train and cab reservations, documents, cancellations and refunds.</p></div></section><div className="travel-container travel-content"><section className="travel-search-card"><div className="travel-section-head" style={{ marginBottom: 0 }}><div><span className="travel-eyebrow">BOOKING OVERVIEW</span><h2 style={{ marginBottom: 4 }}>{loading ? 'Loading bookings...' : `${list.length} travel booking${list.length === 1 ? '' : 's'}`}</h2><p>PDF invoices and travel documents are available on each booking.</p></div><button className="travel-outline" onClick={load}>Refresh bookings ↻</button></div></section>{message && <div className="travel-alert" role="alert">{message}</div>}<section className="travel-listing">{!loading && !list.length && <div className="travel-empty-bookings"><span style={{ fontSize: 44 }}>🧳</span><strong>{message ? 'Bookings could not be loaded' : 'Your next adventure starts here'}</strong><p>{message ? 'Please log in and refresh the page.' : 'Your flight, train and cab bookings will appear here.'}</p><Link to="/flights">Explore journeys →</Link></div>}<div className="travel-bookings-grid">{list.map((booking) => <article className="travel-booking" key={booking._id}><div className="travel-booking-header"><span className="travel-booking-type">{booking.kind === 'flight' ? '✈ FLIGHT' : booking.kind === 'train' ? '🚆 TRAIN' : '🚕 CAB'} · {booking.reference}</span><span className={`travel-booking-status ${booking.status}`}>{booking.status}</span></div><h2>{booking.fromCity} → {booking.toCity}{booking.tripType==='roundtrip'?' → '+booking.fromCity:''}</h2>{booking.tripType==='roundtrip' && <div className="wn-leg-info"><strong>⇄ Round Trip · Both journeys in one booking</strong><span>✈ Onward: {booking.provider} · {new Date(booking.travelDate).toLocaleDateString('en-IN')} · {booking.travelTime} · {booking.travelClass}</span><span>✈ Return: {booking.returnProvider} · {new Date(booking.returnDate).toLocaleDateString('en-IN')} · {booking.returnTravelTime} · {booking.returnTravelClass}</span><small>Cancellation applies to both legs together; refunds follow the earliest departure date.</small></div>}<div className="travel-booking-meta"><span>📅 {new Date(booking.travelDate).toLocaleString('en-IN')}</span><span>🏷 {booking.provider}</span><span>Payment: {booking.paymentStatus}</span></div><div className="travel-booking-amount">{money(booking.amountPaise)}</div>{booking.status === 'cancelled' && (
+  <div className="travel-booking-refund" style={{
+    background: '#f8fafc',
+    border: '1px solid #e2e8f0',
+    borderRadius: 14,
+    padding: 16,
+    marginTop: 14
+  }}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 12,
+      flexWrap: 'wrap',
+      marginBottom: 12
+    }}>
+      <strong style={{color: '#0f172a', fontSize: 15}}>
+        {({
+          not_applicable: 'Refund Not Applicable',
+          not_started: 'Refund Not Started',
+          pending: 'Refund Pending',
+          processing: 'Refund Processing',
+          processed: 'Refund Processed',
+          review_required: 'Refund Under Review',
+          failed: 'Refund Failed'
+        })[booking.refundStatus] ||
+          String(booking.refundStatus || 'Refund Status Unknown')
+            .replace(/_/g, ' ')}
+      </strong>
+      <span style={{
+        background: booking.refundStatus === 'processed'
+          ? '#dcfce7' : '#e2e8f0',
+        color: booking.refundStatus === 'processed'
+          ? '#166534' : '#334155',
+        padding: '5px 10px',
+        borderRadius: 999,
+        fontSize: 12,
+        fontWeight: 700
+      }}>
+        {booking.refundPercentage ?? 0}% refund
+      </span>
+    </div>
+
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: 12,
+      marginBottom: 10
+    }}>
+      <span style={{color: '#64748b'}}>Refund amount</span>
+      <strong style={{color: '#0f172a'}}>
+        {money(booking.refundAmountPaise)}
+      </strong>
+    </div>
+
+    {booking.refundStatus === 'not_applicable' && (
+      <p style={{
+        color: '#64748b',
+        fontSize: 13,
+        lineHeight: 1.6,
+        margin: 0
+      }}>
+        As per the cancellation policy, no refund is applicable
+        for this booking.
+      </p>
+    )}
+
+    {booking.refundStatus === 'review_required' && (
+      <p style={{
+        color: '#92400e',
+        fontSize: 13,
+        margin: 0
+      }}>
+        Your refund requires verification before processing.
+      </p>
+    )}
+
+    {booking.razorpayRefundId && (
+      <p style={{
+        color: '#64748b',
+        fontSize: 12,
+        margin: '10px 0 0',
+        overflowWrap: 'anywhere'
+      }}>
+        Refund reference: {booking.razorpayRefundId}
+      </p>
+    )}
+  </div>
+)}<div className="travel-actions"><button onClick={() => pdf(booking, 'invoice')}>↓ Invoice PDF</button>{booking.status === 'confirmed' && <button onClick={() => pdf(booking, 'ticket')}>↓ Demo ticket PDF</button>}{booking.status === 'cancelled' && <button onClick={() => pdf(booking, 'cancellation')}>↓ Cancellation receipt</button>}{booking.status === 'pending' && booking.paymentStatus !== 'paid' && <button disabled={!!busy} onClick={() => action(booking, 'pay')}>Pay now</button>}{booking.status !== 'cancelled' && <button className="danger" disabled={!!busy} onClick={() => action(booking, 'cancel')}>Cancel booking</button>}{booking.razorpayRefundId && booking.refundStatus !== 'processed' && <button disabled={!!busy} onClick={() => action(booking, 'refund')}>Check refund status</button>}</div></article>)}</div></section><div className="travel-footer-link"><Link to="/flights">Explore more journeys →</Link></div></div>
     {bookingToCancel && (
       <div role="presentation" style={{
         position: 'fixed', inset: 0, zIndex: 9999,
@@ -133,6 +221,77 @@ export default function TravelBookings() {
               Refund eligibility and amount are calculated by the
               booking server. This is a demo travel reservation;
               Razorpay payments use Test Mode.
+            </p>
+          </div>
+
+          <div style={{
+            background: '#f8fafc',
+            border: '1px solid #e2e8f0',
+            borderRadius: 14,
+            padding: 18,
+            marginBottom: 16
+          }}>
+            <h3 style={{
+              margin: '0 0 12px',
+              fontSize: 17,
+              color: '#0f172a'
+            }}>
+              Cancellation & Refund Policy
+            </h3>
+
+            {(bookingToCancel.kind === 'cab'
+              ? [
+                  ['24 hours or more before pickup', '100% refund'],
+                  ['6 to less than 24 hours before pickup', '50% refund'],
+                  ['Less than 6 hours before pickup', 'No refund'],
+                  ['After pickup time', 'Cancellation not allowed']
+                ]
+              : [
+                  ['7 days or more before departure', '100% refund'],
+                  ['3 to less than 7 days before departure', '50% refund'],
+                  ['Less than 3 days before departure', 'No refund'],
+                  ['After departure', 'Cancellation not allowed']
+                ]
+            ).map(([period, refund]) => (
+              <div key={period} style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                gap: 12,
+                padding: '10px 0',
+                borderBottom: '1px solid #e2e8f0',
+                fontSize: 13
+              }}>
+                <span style={{color: '#475569'}}>{period}</span>
+                <strong style={{
+                  color: '#0f172a',
+                  textAlign: 'right',
+                  minWidth: 100
+                }}>{refund}</strong>
+              </div>
+            ))}
+
+            {bookingToCancel.tripType === 'roundtrip' && (
+              <p style={{
+                margin: '12px 0 0',
+                color: '#b45309',
+                fontSize: 13
+              }}>
+                Round-trip cancellation applies to both journeys.
+                Refund eligibility is calculated from the first
+                departure.
+              </p>
+            )}
+
+            <p style={{
+              margin: '12px 0 0',
+              fontSize: 12,
+              lineHeight: 1.6,
+              color: '#64748b'
+            }}>
+              The final refund is calculated by the backend using
+              the exact time remaining before departure or pickup.
+              Refunds are processed in Razorpay Test Mode.
+              Processing may take additional time.
             </p>
           </div>
 
