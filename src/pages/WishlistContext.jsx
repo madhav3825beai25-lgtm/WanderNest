@@ -1,61 +1,53 @@
-import { createContext, useContext, useState } from "react";
-
-const WishlistContext = createContext();
+﻿import { useDispatch, useSelector } from "react-redux";
+import {
+  addToWishlist as addWishlistAction,
+  removeFromWishlist as removeWishlistAction,
+  clearWishlist as clearWishlistAction,
+} from "../redux/wishlistSlice";
 
 export const WishlistProvider = ({ children }) => {
-  const [wishlist, setWishlist] = useState([]);
-
-  const addToWishlist = (hotel) => {
-    setWishlist((prevWishlist) => {
-      const alreadyExists = prevWishlist.some(
-        (item) => item.id === hotel.id
-      );
-
-      if (alreadyExists) {
-        return prevWishlist;
-      }
-
-      return [...prevWishlist, hotel];
-    });
-  };
-
-  const removeFromWishlist = (hotelId) => {
-    setWishlist((prevWishlist) =>
-      prevWishlist.filter((item) => item.id !== hotelId)
-    );
-  };
-
-  const isInWishlist = (hotelId) => {
-    return wishlist.some((item) => item.id === hotelId);
-  };
-
-  const clearWishlist = () => {
-    setWishlist([]);
-  };
-
-  return (
-    <WishlistContext.Provider
-      value={{
-        wishlist,
-        addToWishlist,
-        removeFromWishlist,
-        isInWishlist,
-        clearWishlist,
-      }}
-    >
-      {children}
-    </WishlistContext.Provider>
-  );
+  return children;
 };
 
 export const useWishlist = () => {
-  const context = useContext(WishlistContext);
+  const dispatch = useDispatch();
 
-  if (!context) {
-    throw new Error(
-      "useWishlist must be used inside WishlistProvider"
+  const wishlist = useSelector(
+    (state) => state.wishlist.items
+  );
+
+  const addToWishlist = (hotel) => {
+    dispatch(addWishlistAction(hotel));
+  };
+
+  const removeFromWishlist = (hotelId) => {
+    dispatch(removeWishlistAction(hotelId));
+  };
+
+  const isInWishlist = (hotelId) => {
+    return wishlist.some(
+      (item) => item.id === hotelId
     );
-  }
+  };
 
-  return context;
+  const toggleWishlist = (hotel) => {
+    if (wishlist.some((item) => item.id === hotel.id)) {
+      dispatch(removeWishlistAction(hotel.id));
+    } else {
+      dispatch(addWishlistAction(hotel));
+    }
+  };
+
+  const clearWishlist = () => {
+    dispatch(clearWishlistAction());
+  };
+
+  return {
+    wishlist,
+    addToWishlist,
+    removeFromWishlist,
+    toggleWishlist,
+    isInWishlist,
+    clearWishlist,
+  };
 };
