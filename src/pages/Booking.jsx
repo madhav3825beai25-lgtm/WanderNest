@@ -98,7 +98,8 @@ function createReference() {
   return `WN${Date.now()}${Math.floor(Math.random() * 1000)}`;
 }
 
-const API_BASE = "http://localhost:5000";
+const API_BASE =
+  import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 function loadRazorpayCheckout() {
   return new Promise((resolve, reject) => {
