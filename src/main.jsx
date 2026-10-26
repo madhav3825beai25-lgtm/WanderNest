@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+
 import App from "./App.jsx";
+import { store } from "./redux/store";
 import { WishlistProvider } from "./pages/WishlistContext";
 
 import "./index.css";
@@ -9,10 +12,12 @@ import "./styles/PremiumTheme.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <WishlistProvider>
-        <App />
-      </WishlistProvider>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <WishlistProvider>
+          <App />
+        </WishlistProvider>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
