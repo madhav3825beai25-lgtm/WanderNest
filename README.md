@@ -1,5 +1,17 @@
 # React + Vite
 
+## WanderNest travel assistant
+
+Open **Ask WanderNest** on any page to ask about destinations, packages, and itineraries.
+For local development, set `GEMINI_API_KEY` in `.env` at the project root or in
+`backend/.env`, start the Express backend from `backend` with `node server.js`,
+then run `npm run dev` from the root. The widget uses `VITE_API_URL` when set.
+
+For Vercel, set `GEMINI_API_KEY` in the project environment and redeploy. The
+production widget calls the same-origin `/api/chat` function by default. Set
+`VITE_CHAT_API_URL` to use a separately hosted Express backend for chat.
+Set `GEMINI_MODEL` on the server to override the default `gemini-3.8-flash`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
