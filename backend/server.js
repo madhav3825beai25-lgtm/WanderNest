@@ -80,6 +80,14 @@ app.use(
 // ======================================
 
 app.use(express.json({ limit: "1mb" }));
+app.all("/api/chat", async (req, res, next) => {
+  try {
+    const { default: chat } = await import("../api/chat.js");
+    await chat(req, res);
+  } catch (error) {
+    next(error);
+  }
+});
 app.use("/api/travel", travelRoutes);
 app.use("/api/documents", travelPdfRoutes);
 

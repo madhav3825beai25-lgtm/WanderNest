@@ -26,13 +26,12 @@ const instructions = [
   "Never invent live availability, prices, or booking details.",
   "For account, booking, and payment issues direct visitors to /contact.",
   "Never ask for passwords, card details, or OTPs.",
-  `WanderNest catalog: ${JSON.stringify(catalog)}`,
 ].join("\n");
 
 const requests = new Map();
 let cleanupAt = 0;
 
-function catalogReply(messages) {
+function findCatalogEntries(messages) {
   const queries = messages.filter(({ role }) => role === "user").reverse();
   for (const { text } of queries) {
     const question = " " + text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ") + " ";
@@ -43,16 +42,23 @@ function catalogReply(messages) {
       mentions(title) || mentions(location.split(",")[0]) ||
       trips.some(({ name }) => location.toLowerCase().includes(name.toLowerCase()))
     );
-    const entries = [
-      ...trips.slice(0, 3).map(({ name, duration, places, page }) =>
-        `${name} · ${duration}\nPlaces to visit: ${places?.slice(0, 4).join(", ") || "See the destination guide."}\n${page}`),
-      ...offers.slice(0, 3).map(({ title, duration, includes, page }) =>
-        `${title} · ${duration}\nIncludes: ${includes?.slice(0, 3).join(", ") || "See the package details."}\n${page}`),
-    ];
-    if (entries.length) {
-      return "Gemini is temporarily unavailable. Here’s what’s in the WanderNest catalog:\n\n" +
-        entries.join("\n\n");
+    if (trips.length || offers.length) {
+      return { trips: trips.slice(0, 4), offers: offers.slice(0, 4) };
     }
+  }
+  return { trips: [], offers: [] };
+}
+
+function catalogReply({ trips, offers }) {
+  const entries = [
+    ...trips.slice(0, 3).map(({ name, duration, places, page }) =>
+      `${name} · ${duration}\nPlaces to visit: ${places?.slice(0, 4).join(", ") || "See the destination guide."}\n${page}`),
+    ...offers.slice(0, 3).map(({ title, duration, includes, page }) =>
+      `${title} · ${duration}\nIncludes: ${includes?.slice(0, 3).join(", ") || "See the package details."}\n${page}`),
+  ];
+  if (entries.length) {
+    return "Gemini is temporarily unavailable. Here’s what’s in the WanderNest catalog:\n\n" +
+      entries.join("\n\n");
   }
   return "Gemini is temporarily unavailable. Tell me a destination, such as Goa, Jaipur, or Kashmir, and I can look it up in the WanderNest catalog. For booking or payment help, visit /contact.";
 }
@@ -114,9 +120,16 @@ export default async function chat(req, res) {
   const configuredModel = process.env.GEMINI_MODEL?.trim();
   const defaultModel = "gemini-3.1-flash-lite";
   const models = [...new Set([configuredModel || defaultModel, defaultModel])];
+  const matches = findCatalogEntries(messages);
+  const context = matches.trips.length || matches.offers.length
+    ? JSON.stringify(matches)
+    : JSON.stringify({
+        destinations: catalog.destinations.map(({ name }) => name),
+        packages: catalog.packages.map(({ title }) => title),
+      });
 
   if (!apiKey) {
-    return res.status(200).json({ reply: catalogReply(messages), source: "catalog" });
+    return res.status(200).json({ reply: catalogReply(matches), source: "catalog" });
   }
 
   const ip =
@@ -144,7 +157,7 @@ export default async function chat(req, res) {
           },
           signal: AbortSignal.timeout(15_000),
           body: JSON.stringify({
-            systemInstruction: { parts: [{ text: instructions }] },
+            systemInstruction: { parts: [{ text: `${instructions}\nWanderNest catalog: ${context}` }] },
             contents: messages.map(({ role, text }) => ({
               role: role === "assistant" ? "model" : "user",
               parts: [{ text: text.trim() }],
@@ -163,7 +176,7 @@ export default async function chat(req, res) {
       );
 
       if (!response.ok) {
-        console.error("Gemini chat HTTP status:", response.status, model);
+          console.error("Gemini chat HTTP status:", response.status, model);
         if (response.status === 401 || response.status === 403) break;
         continue;
       }
@@ -189,5 +202,5 @@ export default async function chat(req, res) {
     }
   }
 
-  return res.status(200).json({ reply: catalogReply(messages), source: "catalog" });
+  return res.status(200).json({ reply: catalogReply(matches), source: "catalog" });
 }
