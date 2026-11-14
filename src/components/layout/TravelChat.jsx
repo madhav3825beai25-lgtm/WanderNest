@@ -49,7 +49,7 @@ export default function TravelChat() {
     if (!question || request.current) return;
 
     const controller = new AbortController();
-    const timer = window.setTimeout(() => controller.abort(), 30_000);
+    const timer = window.setTimeout(() => controller.abort(), 55_000);
     const userMessage = { role: "user", text: question };
 
     request.current = controller;

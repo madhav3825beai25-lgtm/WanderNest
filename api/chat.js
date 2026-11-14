@@ -115,7 +115,7 @@ export default async function chat(req, res) {
           "Content-Type": "application/json",
           "x-goog-api-key": apiKey,
         },
-        signal: AbortSignal.timeout(20_000),
+        signal: AbortSignal.timeout(45_000),
         body: JSON.stringify({
           systemInstruction: { parts: [{ text: instructions }] },
           contents: messages.map(({ role, text }) => ({
