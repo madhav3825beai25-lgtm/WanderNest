@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import TravelChat from "./components/layout/TravelChat";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -88,6 +89,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <TravelChat />
     </>
   );
 }
