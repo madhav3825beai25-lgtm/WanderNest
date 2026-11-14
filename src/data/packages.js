@@ -188,7 +188,7 @@ const packages = [
     location: "Cairo, Egypt",
     duration: "6 Days / 5 Nights",
     price: "₹84,999",
-    image: image("photo-1539650116574-75c0c6d73f6e"),
+    image: "/giza-pyramids.jpg",
     description: "Discover ancient pyramids, fascinating temples, desert landscapes, and Egyptian history.",
     hotels: [],
     places: ["Pyramids of Giza", "Great Sphinx", "Egyptian Museum", "Khan el-Khalili", "Saqqara"],
