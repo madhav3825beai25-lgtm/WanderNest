@@ -2,10 +2,11 @@ import destinations from "../src/data/destinations.js";
 import packages from "../src/data/packages.js";
 
 const catalog = {
-  destinations: destinations.map(({ id, name, country, duration }) => ({
+  destinations: destinations.map(({ id, name, country, duration, places }) => ({
     name,
     country,
     duration,
+    places,
     page: `/destinations/${id}`,
   })),
   packages: packages.map(({ id, title, location, duration, includes }) => ({
@@ -30,6 +31,31 @@ const instructions = [
 
 const requests = new Map();
 let cleanupAt = 0;
+
+function catalogReply(messages) {
+  const queries = messages.filter(({ role }) => role === "user").reverse();
+  for (const { text } of queries) {
+    const question = " " + text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ") + " ";
+    const mentions = (value) => value &&
+      question.includes(" " + value.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ") + " ");
+    const trips = catalog.destinations.filter(({ name }) => mentions(name));
+    const offers = catalog.packages.filter(({ title, location }) =>
+      mentions(title) || mentions(location.split(",")[0]) ||
+      trips.some(({ name }) => location.toLowerCase().includes(name.toLowerCase()))
+    );
+    const entries = [
+      ...trips.slice(0, 3).map(({ name, duration, places, page }) =>
+        `${name} · ${duration}\nPlaces to visit: ${places?.slice(0, 4).join(", ") || "See the destination guide."}\n${page}`),
+      ...offers.slice(0, 3).map(({ title, duration, includes, page }) =>
+        `${title} · ${duration}\nIncludes: ${includes?.slice(0, 3).join(", ") || "See the package details."}\n${page}`),
+    ];
+    if (entries.length) {
+      return "Gemini is temporarily unavailable. Here’s what’s in the WanderNest catalog:\n\n" +
+        entries.join("\n\n");
+    }
+  }
+  return "Gemini is temporarily unavailable. Tell me a destination, such as Goa, Jaipur, or Kashmir, and I can look it up in the WanderNest catalog. For booking or payment help, visit /contact.";
+}
 
 function isRateLimited(ip) {
   const now = Date.now();
@@ -85,12 +111,12 @@ export default async function chat(req, res) {
   }
 
   const apiKey = process.env.GEMINI_API_KEY?.trim();
-  const model = process.env.GEMINI_MODEL?.trim() || "gemini-3.8-flash";
+  const configuredModel = process.env.GEMINI_MODEL?.trim();
+  const defaultModel = "gemini-3.1-flash-lite";
+  const models = [...new Set([configuredModel || defaultModel, defaultModel])];
 
   if (!apiKey) {
-    return res.status(503).json({
-      error: "The travel assistant is currently unavailable.",
-    });
+    return res.status(200).json({ reply: catalogReply(messages), source: "catalog" });
   }
 
   const ip =
@@ -106,54 +132,62 @@ export default async function chat(req, res) {
     });
   }
 
-  try {
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": apiKey,
-        },
-        signal: AbortSignal.timeout(45_000),
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: instructions }] },
-          contents: messages.map(({ role, text }) => ({
-            role: role === "assistant" ? "model" : "user",
-            parts: [{ text: text.trim() }],
-          })),
-          generationConfig: { maxOutputTokens: 1024 },
-        }),
+  for (const model of models) {
+    try {
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": apiKey,
+          },
+          signal: AbortSignal.timeout(15_000),
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: instructions }] },
+            contents: messages.map(({ role, text }) => ({
+              role: role === "assistant" ? "model" : "user",
+              parts: [{ text: text.trim() }],
+            })),
+            generationConfig: {
+              maxOutputTokens: 1024,
+              ...(model === "gemini-3.1-flash-lite" && {
+                thinkingConfig: { thinkingLevel: "MINIMAL" },
+              }),
+              ...(model === "gemini-3.8-flash" && {
+                thinkingConfig: { thinkingLevel: "LOW" },
+              }),
+            },
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        console.error("Gemini chat HTTP status:", response.status, model);
+        if (response.status === 401 || response.status === 403) break;
+        continue;
       }
-    );
 
-    if (!response.ok) {
-      console.error("Gemini chat HTTP status:", response.status);
-      return res.status(503).json({
-        error: "The travel assistant is temporarily unavailable. Try again shortly.",
-      });
+      const data = await response.json();
+      const parts = data.candidates?.[0]?.content?.parts ?? [];
+      const reply = parts
+        .filter((part) => !part.thought && typeof part.text === "string")
+        .map((part) => part.text)
+        .join("")
+        .trim()
+        .slice(0, 4000);
+
+      if (!reply) {
+        return res.status(422).json({
+          error: "Try rephrasing your travel question.",
+        });
+      }
+
+      return res.status(200).json({ reply });
+    } catch (error) {
+      console.error("Gemini chat request failed:", error.name, error.cause?.code, model);
     }
-
-    const data = await response.json();
-    const parts = data.candidates?.[0]?.content?.parts ?? [];
-    const reply = parts
-      .filter((part) => !part.thought && typeof part.text === "string")
-      .map((part) => part.text)
-      .join("")
-      .trim()
-      .slice(0, 4000);
-
-    if (!reply) {
-      return res.status(422).json({
-        error: "Try rephrasing your travel question.",
-      });
-    }
-
-    return res.status(200).json({ reply });
-  } catch (error) {
-    console.error("Gemini chat request failed:", error.name);
-    return res.status(503).json({
-      error: "The travel assistant is temporarily unavailable. Try again shortly.",
-    });
   }
+
+  return res.status(200).json({ reply: catalogReply(messages), source: "catalog" });
 }
