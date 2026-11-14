@@ -3,14 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-const path = require("node:path");
-const dotenv = require("dotenv");
-dotenv.config();
-const { parsed: rootEnv } = dotenv.config({
-  path: path.resolve(__dirname, "../.env"),
-  processEnv: {},
-  quiet: true,
-});
+require("dotenv").config();
 
 const Destination = require("./models/Destination");
 const Hotel = require("./models/Hotel");
@@ -86,14 +79,6 @@ app.use(
 // JSON MIDDLEWARE
 // ======================================
 
-app.all("/api/chat", express.json({ limit: "48kb" }), async (req, res) => {
-  const { default: chat } = await import("../api/chat.js");
-  return chat(req, res, {
-    apiKey: process.env.GEMINI_API_KEY || rootEnv?.GEMINI_API_KEY,
-    model: process.env.GEMINI_MODEL || rootEnv?.GEMINI_MODEL,
-    clientIp: req.ip,
-  });
-});
 app.use(express.json({ limit: "1mb" }));
 app.use("/api/travel", travelRoutes);
 app.use("/api/documents", travelPdfRoutes);
